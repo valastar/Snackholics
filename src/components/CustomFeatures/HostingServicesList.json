@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Domain Registration",
+        "imageSrc": "/images/services/hostings1.svg",
+        "description": "Launch your online identity with a custom domain name. We can help you find the right name for your business in 60 seconds."
+    },
+    {
+        "title": "Website Hosting",
+        "imageSrc": "/images/services/hostings2.svg",
+        "description": "Easily create your own website with our website builder: You select a theme, make it your own, and get your website online today!"
+    },
+    {
+        "title": "Email Hosting",
+        "imageSrc": "/images/services/hostings3.svg",
+        "description": "We offer several enterprise-grade hosted email plans for your small business. Choose the one that’s right for you."
+    }
+    
+]

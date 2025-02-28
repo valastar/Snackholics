@@ -1,0 +1,61 @@
+.ecommerceDevices{
+    padding: 150px 0;
+    background: #DDA72A;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 2168.94px;
+        height: 100%;
+        background: url(../../../../../../public/images/services/ecommerceFeatures.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    @media screen and (max-width: 992px){
+        padding: 100px 0;
+    }
+    @media screen and (max-width: 767px){
+        padding: 80px 0;
+    }
+    h2{
+        font-size: 60px;
+        font-weight: 700;
+        color:#fff;
+        margin-bottom: 30px;
+        @media (max-width: 992px) {
+            font-size: 44px;
+        }
+        span{
+            color: #521212;
+        }
+    }
+    p{
+        font-size: 24px;
+        color: #0B0B0B;
+        margin-bottom: 5px;
+        @media screen and (max-width: 992px){
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    .btn-center{
+        margin-top: 60px;
+        @media screen and (max-width: 768px){
+            margin-top: 40px;
+        }
+    }
+    img{
+        width: 100%;
+        height: auto;
+        @media screen and (max-width: 992px){
+            margin-top: 50px;
+        }
+    }
+}

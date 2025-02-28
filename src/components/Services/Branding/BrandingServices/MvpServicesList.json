@@ -1,0 +1,26 @@
+[
+    {
+      "img": "/images/services/mvp-service-1.svg",
+      "title": "MVP Development"
+    },
+    {
+      "img": "/images/services/mvp-service-2.svg",
+      "title": "MVP Improvement"
+    },
+    {
+      "img": "/images/services/mvp-service-3.svg",
+      "title": "Market Analysis"
+    },
+    {
+      "img": "/images/services/mvp-service-4.svg",
+      "title": "MVP Consulting"
+    },
+    {
+      "img": "/images/services/mvp-service-5.svg",
+      "title": "MVP Prototyping"
+    },
+    {
+      "img": "/images/services/mvp-service-6.svg",
+      "title": "Full-scale Product"
+    }
+  ]

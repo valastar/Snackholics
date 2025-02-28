@@ -1,0 +1,32 @@
+[
+    {
+      "imageSrc": "/images/services/cw1.svg",
+        "title": "Website Copywriting",
+      "description": "The right words can help your site be found, and they’ll keep people reading long enough to get a sense of who you are, how you can make their lives better, why they should choose you, and what they should do next. I write custom website copy that connects."
+    },
+    {
+      "imageSrc": "/images/services/cw2.svg",
+        "title": "Blog Writing",
+      "description": "Blog Writing is one of the most important aspects of Content Marketing. Well written blogs help both in creating your verbal branding as well as overall recall."
+    },
+    {
+      "imageSrc": "/images/services/cw3.svg",
+        "title": "Article Writing",
+      "description": "If you want to be a thought leader or an industry leader, you need to publish in depth thoughts in the print or the online media. We help you with writing them."
+    },
+    {
+      "imageSrc": "/images/services/cw4.svg",
+        "title": "Whitepapers & eBooks",
+      "description": "Whether you want to generate more leads through a lead magnet or want to strengthen your brand image, whitepapers and eBooks are a clear choice."
+    },
+    {
+      "imageSrc": "/images/services/cw5.svg",
+        "title": "Product Descriptions",
+      "description": "While buying products online, people read product descriptions in detail. Gone are the days of impulse buying with eCommerce being abused."
+    },
+    {
+      "imageSrc": "/images/services/cw6.svg",
+        "title": "Marketing Copy Writing",
+      "description": "When it comes to B2B or B2C marketing copy, you need content people want to read. Whether you’re creating digital content, a newsletter, sales brochure, fundraising materials, business proposal or annual report."
+    }
+  ]

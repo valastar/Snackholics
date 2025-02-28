@@ -1,0 +1,95 @@
+.wcu-quick{
+    padding: 100px 0 ;
+    background: #0B0B0B;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: none;
+        height: 0.01px;
+        width: 0.94px;
+        z-index: -81;
+    }
+  
+    @media screen and (max-width: 500px){
+        padding: 50px 0;
+    }
+    .title {
+        text-align: center;
+    
+        h2{
+          font-size: 60px;
+          font-weight: 700;
+          color:#fff;
+          margin-bottom: 30px;
+          @media (max-width: 992px) {
+            font-size: 44px;
+          }
+          span{
+            color: rgba(220, 166, 41, 1);
+          }
+        }
+        p{
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 5px;
+            @media screen and (max-width: 992px){
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+      }
+      .wcu-quick__card{
+        background: #222222;
+        border-radius: 30px;
+        padding: 20px;
+        text-align: left;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        min-height: 200px;
+        position: relative;
+        margin: 14px 0 28px;
+
+        &::after{
+            content: '';
+            width: 95%;
+            height: 100px;
+            background-color: #1e1e1e69;
+            position: absolute;
+            left: 16px;
+            bottom: -16px;
+            border-radius: 30px;
+            z-index: -1;
+
+            @media only screen and (max-width:500px){
+                width: 94%;
+            }
+        }
+        span{
+            color: #DCA629;
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0;
+        }
+    }
+    .btn-center{
+        text-align: center;
+        margin-top: 80px;
+        @media screen and (max-width: 768px){
+            margin-top: 40px;
+        }
+    }
+}

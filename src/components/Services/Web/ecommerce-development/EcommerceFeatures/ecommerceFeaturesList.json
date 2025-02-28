@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Fully Customizable",
+        "imageSrc": "/images/services/feature1.svg",
+        "description":"You’ll want your ecommerce website to present your products in the very best way. And as your business grows, you’ll find that you have new requirements and ideas to keep improving."
+    },
+    {
+        "title": "Easy to Manage",
+        "imageSrc": "/images/services/feature2.svg",
+        "description":"Products come and go. How you present your products online is critical to creating appeal and driving that all-important click to add to basket and through to check out."
+    },
+    {
+        "title": "High-Performance",
+        "imageSrc": "/images/services/feature3.svg",
+        "description":"We leverage over a decade experience delivering hundreds of high-performance eCommerce websites that are carefully engineered using best practice techniques and approaches."
+    },
+    {
+      "title": "Fully Customizable",
+      "imageSrc": "/images/services/feature1.svg",
+      "description":"You’ll want your ecommerce website to present your products in the very best way. And as your business grows, you’ll find that you have new requirements and ideas to keep improving."
+  },
+  {
+      "title": "Easy to Manage",
+      "imageSrc": "/images/services/feature2.svg",
+      "description":"Products come and go. How you present your products online is critical to creating appeal and driving that all-important click to add to basket and through to check out."
+  },
+  {
+      "title": "High-Performance",
+      "imageSrc": "/images/services/feature3.svg",
+      "description":"We leverage over a decade experience delivering hundreds of high-performance eCommerce websites that are carefully engineered using best practice techniques and approaches."
+  }
+]

@@ -1,0 +1,150 @@
+.awesomeProject {
+  padding: 100px 0 150px;
+  overflow: hidden;
+
+  @media screen and (max-width: 992px) {
+    padding: 50px 0 80px;
+  }
+
+  .title {
+    max-width: 950px;
+    text-align: center;
+    margin: 0 auto 50px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 30px;
+    }
+
+    h2{
+      font-size: 60px;
+      font-weight: 700;
+      color:#fff;
+      margin-bottom: 10px;
+      @media (max-width: 1600px) {
+        font-size: 44px;
+      }
+    }
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    @media screen and (max-width: 992px) {
+      justify-content: flex-start;
+      overflow-x: scroll;
+      gap: 15px;
+      padding-bottom: 15px;
+      margin-bottom: 50px;
+    }
+    button {
+      background: rgba(34, 34, 34, 1);
+      border: none;
+      padding: 10px 30px;
+      margin: 0 3px;
+      outline: none;
+      border-radius: 100px;
+      color: #fff;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.3s ease;
+
+      &.active {
+        background: rgba(220, 166, 41, 1);
+        color: rgba(29, 29, 29, 1);
+      }
+
+      &:hover {
+        background-color: rgba(220, 166, 41, 1);
+        color: #121212;
+      }
+    }
+  }
+
+  .col-md-4{
+    &:nth-child(2){
+      .blockCards{
+        margin-top: 100px;
+        @media screen and (max-width: 767px) {
+          margin-top: 0;
+        }
+      }
+    }
+    &:nth-child(3){
+      .blockCards{
+        margin-top: 200px;
+        position: relative;
+        @media screen and (max-width: 767px) {
+          margin-top: 0;
+        }
+        &::after{
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          background-image: url(../../../../../public/images/services/yellowStar.svg);
+          background-size: contain;
+          top: -200px;
+          right: 50%;
+          transform: translateX(50%);
+          @media screen and (max-width: 767px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .block {
+    border-radius: 40px;
+    height: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .heading {
+      line-height: 36px;
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      font-weight: 600;
+      margin: 10px 0;
+      @media screen and (max-width: 992px) {
+        font-size: 20px;
+        line-height: 28px;
+     }
+    }
+    .tag{
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 115px;
+      @media screen and (max-width: 992px) {
+        font-size: 16px;
+        padding-left: 80px;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 1px;
+        background: #DCA629;
+        top: 50%;
+        left: 0;
+        @media screen and (max-width: 992px) {
+          width: 70px;
+        }
+      }
+    }
+
+  }
+  .btn-center{
+    text-align: center;
+    margin-top: 80px;
+}
+}

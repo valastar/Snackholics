@@ -1,0 +1,32 @@
+[
+    {
+      "imageSrc": "/images/services/smm-1.svg",
+        "title": "SaaS Startup Workshop",
+      "description": "Transform your raw ideas into a product concept tailored for the Canadian market, complete with a clear development roadmap and initial estimates to guide your project to success."
+    },
+    {
+      "imageSrc": "/images/services/smm-2.svg",
+        "title": "SaaS Migrations",
+      "description": "Maximize the benefits of cloud architecture for your business in Canada. Modernize your SaaS application and eliminate any concerns about reliability or scalability, ensuring a seamless experience for your users."
+    },
+    {
+      "imageSrc": "/images/services/saasDev-1.svg",
+        "title": "SaaS Growth Hacking",
+      "description": "Upgrade and enhance your SaaS infrastructure for the Canadian market. We offer strategic insights and solutions—your 'cheat codes'—to help your product grow at an impressive pace."
+    },
+    {
+      "imageSrc": "/images/services/saasDev-2.svg",
+        "title": "SaaS MVP Development",
+      "description": "As an experienced SaaS application development company in Canada, we will build a Minimum Viable Product (MVP) for your dream app from the ground up—delivering it on time and within budget."
+    },
+    {
+      "imageSrc": "/images/services/saasDev-3.svg",
+        "title": "SaaS QA and Testing",
+      "description": "Our Canadian SaaS application development team will thoroughly test every aspect of your platform to ensure it operates smoothly and securely."
+    },
+    {
+      "imageSrc": "/images/services/saasDev-4.svg",
+        "title": "SaaS API Development",
+      "description": "We will develop and integrate secure, reliable APIs to enhance your SaaS infrastructure with new functionalities tailored for the Canadian market."
+    }
+  ]

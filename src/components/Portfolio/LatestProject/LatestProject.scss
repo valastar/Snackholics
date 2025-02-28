@@ -1,0 +1,142 @@
+.latestProject {
+  padding: 100px 0 150px;
+  overflow: hidden;
+
+  @media screen and (max-width: 992px) {
+    padding: 50px 0 80px;
+  }
+
+  .title {
+    max-width: 950px;
+    text-align: center;
+    margin: 0 auto 50px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 30px;
+    }
+
+    h2{
+      font-size: 60px;
+      font-weight: 700;
+      color:#fff;
+      margin-bottom: 10px;
+      @media (max-width: 1600px) {
+        font-size: 44px;
+      }
+    }
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    @media screen and (max-width: 992px) {
+      justify-content: flex-start;
+      overflow-x: scroll;
+      gap: 15px;
+      padding-bottom: 15px;
+      margin-bottom: 50px;
+    }
+    button {
+      background: rgba(34, 34, 34, 1);
+      border: none;
+      padding: 10px 30px;
+      margin: 0 3px;
+      outline: none;
+      border-radius: 100px;
+      color: #fff;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background-color 0.3s ease;
+
+      &.active {
+        background: rgba(220, 166, 41, 1);
+        color: rgba(29, 29, 29, 1);
+      }
+
+      &:hover {
+        background-color: rgba(220, 166, 41, 1);
+        color: #121212;
+      }
+    }
+  }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    @media screen and (max-width: 600px) {
+     display: flex;
+     flex-direction: column;
+    }
+  }
+  
+  
+  .div5 {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    height: 100%;
+  }
+
+  .div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+  }
+
+  .div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+  }
+
+  .parent > .div5:last-of-type {
+    grid-column: span 5;
+    grid-row: span 4;
+  }
+
+  
+
+  .block {
+    border-radius: 40px;
+    height: 100%;
+    position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0.705) 41%, rgba(18, 18, 18, 0) 100%);
+        border-radius: 40px;
+        z-index: 1;
+      }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 40px;
+    }
+
+    
+
+    .heading {
+      line-height: 36px;
+      color: rgba(220, 166, 41, 1);
+      font-size: 18px;
+      font-weight: 400;
+      margin: 20px 0 20px;
+      position: absolute;
+      bottom: 0;
+      z-index: 99;
+      left: 30px;
+    }
+
+  }
+  .btn-center{
+    text-align: center;
+    margin-top: 80px;
+}
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "imageSrc": "/images/services/ind-1.svg",
+        "title": "Idea Validation",
+        "description": "MVP software development allows you to assess how well your solution addresses the pain points of Canadian end users. This approach helps you determine the feasibility of your product before committing to a full-scale launch."
+    },
+    {
+        "imageSrc": "/images/services/ind-2.svg",
+        "title": "Quick Time to Market",
+        "description": "Launch your product faster than competitors with our MVP software design and development services in Canada. By including key features for early users, you can quickly gather feedback and successfully capture the market."
+    },
+    {
+        "imageSrc": "/images/services/ind-3.svg",
+        "title": "Win the Confidence of First-Adopter",
+        "description": "MVP app development allows you to showcase the functionality and potential of your product to Canadian stakeholders, investors, and early adopters. This helps build confidence, launch campaigns, and secure funding."
+    },
+    {
+        "imageSrc": "/images/services/ind-6.svg",
+        "title": "Test Market Feasibility",
+        "description": "Before entering the real market, MVP development helps you assess the market size, unique selling points (USPs), challenges, competition, and overall feasibility in Canada. MVPs ensure your business objectives are met with the essential functionalities needed to succeed."
+    }
+]

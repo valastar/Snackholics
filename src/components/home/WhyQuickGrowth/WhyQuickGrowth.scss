@@ -1,0 +1,75 @@
+.whyQuickGrowth{
+    padding: 100px 0;
+    background: url(../.././../../public/images/home/whyUs.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    @media screen and (max-width: 768px){
+        padding: 50px 0;
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 70px;
+        @media screen and (max-width: 768px){
+            margin-bottom: 40px;
+        }
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            color:#fff;
+            margin-bottom: 10px;
+            @media screen and (max-width: 992px){
+                font-size: 44px;
+            }
+            span{
+                color: #DCA629;
+            }
+        }
+    }
+    .quickWrapper{
+        .firstBlock{
+            .block{
+                flex-direction: row-reverse;
+                text-align: end;
+        }
+        }
+        .block{
+            background-color: #DCA629;
+            padding: 20px;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            &:hover{
+                transform: translateY(-10px);
+            }
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            h5{
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                margin-bottom: 6px;
+            }
+            p{
+                font-size: 16px;
+                color: #0B0B0B;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+        .hands{
+            width: 100%;
+            height: auto;
+            @media screen and (max-width: 767px){
+               display: none;
+            }
+        }
+    }
+}

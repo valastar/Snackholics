@@ -1,0 +1,22 @@
+[
+  {
+    "socialIcon": "/images/Link.svg",
+    "socialLink": "https://www.facebook.com/"
+  },
+  {
+    "socialIcon": "/images/Link-1.svg",
+    "socialLink": "https://www.twitter.com/"
+  },
+  {
+    "socialIcon": "/images/Link-2.svg",
+    "socialLink": "https://www.linkedin.com/"
+  },
+  {
+    "socialIcon": "/images/Link-3.svg",
+    "socialLink": "https://www.instagram.com"
+  },
+  {
+    "socialIcon": "/images/Link-4.svg",
+    "socialLink": "https://www.youtube.com"
+  }
+]

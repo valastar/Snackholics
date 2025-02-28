@@ -1,0 +1,132 @@
+.contactBanner{
+    background: url(../../../../public/images/contact/contactBack.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px 0 0;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    @media screen and (max-width: 992px){
+        padding: 85px 0 0;       
+    }
+    .title{
+        max-width: 645px;
+        margin: 0 auto;
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            color:#fff;
+            margin-bottom: 10px;
+            @media screen and (max-width: 992px){
+                font-size: 44px;
+            }
+            span{
+                color: rgba(220, 166, 41, 1);
+        
+            }
+        }
+        p{
+            color: rgba(255, 255, 255, 1);
+            font-size: 20px;
+            @media screen and (max-width: 992px){
+                font-size: 16px;
+                
+            }
+        }
+    }
+}
+.contactInfo{
+    margin-top: -100px;
+    .info{
+        background: rgba(34, 34, 34, 1);
+        padding: 30px;
+        border-radius: 20px;
+        border: 3px solid rgba(48, 48, 48, 1);
+        text-align: center;
+        height: 100%;
+        @media screen and (max-width: 600px){
+            padding: 30px 20px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        img{
+            margin-bottom: 50px;
+            @media screen and (max-width: 600px){
+               margin-bottom: 30px;
+               width: 120px;
+               height: 120px;
+            }
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 600;
+            font-family: "sf pro display";
+            color: rgba(255, 255, 255, 1);
+            margin-bottom: 10px;
+            @media screen and (max-width: 600px){
+                font-size: 24px;
+            }
+        }
+        .subTitle{
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 10px;
+            @media screen and (max-width: 600px){
+                font-size: 16px;
+            }
+        }
+        .title{
+            font-size: 24px;
+            color: rgba(255, 255, 255, 1);
+            margin-bottom: 10px;
+            @media screen and (max-width: 600px){
+                font-size: 16px;
+            }
+        }
+        .block{
+            border-top: 2px solid rgba(48, 48, 48, 1);
+            border-bottom: 2px solid rgba(48, 48, 48, 1);
+            padding: 15px 0;
+            text-align: center;
+            margin-bottom: 15px;
+            p{
+                font-size: 24px;
+            color: rgba(255, 255, 255, 1);
+            margin-bottom: 10px;
+            @media screen and (max-width: 600px){
+                font-size: 16px;
+            }
+            }
+            span{
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.7);
+                @media screen and (max-width: 600px){
+                    font-size: 14px;
+                }
+            }
+        }
+        a{
+            display: inline-block;
+            font-size: 24px;
+            color: rgba(255, 255, 255, 1);
+            @media screen and (max-width: 600px){
+                font-size: 16px;
+            }
+            span{
+                color: rgba(220, 166, 41, 1);
+            }
+        }
+        .btn-custom{
+            font-size: 20px;
+            margin-top: 30px;
+            @media screen and (max-width: 600px){
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

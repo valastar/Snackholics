@@ -1,0 +1,27 @@
+[
+    {
+      "title": "Programming Languages",
+      "images": ["/images/services/ts-1.svg", "/images/services/ts-2.svg", "/images/services/ts-3.svg", "/images/services/ts-4.svg"]
+    },
+    {
+      "title": "Frameworks",
+      "images": ["/images/services/ts-5.svg", "/images/services/ts-6.svg", "/images/services/ts-7.svg"]
+    },
+    {
+      "title": "Databases",
+      "images": ["/images/services/ts-8.svg", "/images/services/ts-9.svg", "/images/services/ts-10.svg", "/images/services/ts-11.svg", "/images/services/ts-12.svg"]
+    },
+    {
+      "title": "Back-end",
+      "images": ["/images/services/ts-13.svg", "/images/services/ts-14.svg", "/images/services/ts-15.svg", "/images/services/ts-16.svg", "/images/services/ts-17.svg"]
+    },
+    {
+      "title": "IDE",
+      "images": ["/images/services/ts-18.svg", "/images/services/ts-19.svg"]
+    },
+    {
+      "title": "Design Tools",
+      "images": ["/images/services/ts-20.svg", "/images/services/ts-21.svg", "/images/services/ts-22.svg"]
+    }
+  ]
+  

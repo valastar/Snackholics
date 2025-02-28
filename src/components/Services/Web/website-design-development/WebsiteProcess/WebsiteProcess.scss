@@ -1,0 +1,177 @@
+.websiteProcess {
+    padding: 100px 0 200px;
+    overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        padding: 40px 0 90px;
+    }
+
+    .title {
+        margin-bottom: -60px;
+
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 992px) {
+                font-size: 44px;
+            }
+
+            span {
+                color: #dca629;
+                display: block;
+            }
+        }
+    }
+
+    .swiper_container {
+        height: auto !important;
+        padding: 120px 0 70px;
+        overflow: hidden;
+
+        .swiper-slide {
+            height: 100% !important;
+            border-radius: 17px;
+            z-index: 10;
+            position: relative;
+
+            &.swiper-slide-active {
+                .image-wrapper {
+                    &::after {
+                        backdrop-filter: none !important;
+                    }
+                }
+
+            }
+
+            .slide-title {
+                font-weight: 600;
+                color: white;
+                font-size: 21px;
+                text-align: center;
+                padding: 0 30px 0;
+                position: absolute;
+                bottom: 15px;
+                z-index: 2;
+                text-transform: uppercase;
+            }
+
+            .image-wrapper {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0.705) 41%, rgba(18, 18, 18, 0) 100%);
+                    z-index: 1;
+                    border-radius: 10px;
+                    backdrop-filter: blur(1.5px);
+                }
+
+                img {
+                    width: 100% !important;
+                    height: 578px !important;
+                    object-fit: cover;
+                    border-radius: 17px;
+
+                    @media screen and (max-width: 992px) {
+                        height: 378px !important;
+                    }
+
+                    @media screen and (max-width: 565px) {
+                        height: 100% !important;
+                        width: 95% !important;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+
+        .swiper-pagination {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+
+            .swiper-pagination-bullet {
+                background: transparent;
+                border: 2px solid #848484;
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                border-radius: 50%;
+                margin: 0 5px;
+                opacity: 1;
+
+                @media screen and (max-width: 768px) {
+                    width: 13px;
+                    height: 13px;
+
+                }
+            }
+
+            .swiper-pagination-bullet-active {
+                background: rgba(220, 166, 41, 1);
+                border: 1px solid rgba(220, 166, 41, 1);
+            }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            right: 10%;
+            top: 0;
+            left: unset;
+            top: 25px;
+            width: 47px;
+            font-weight: bold;
+            height: 47px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #DDA72A;
+            background-color: #DDA72A;
+            border-radius: 10px
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 20px;
+            color: #222222
+        }
+
+        .swiper-button-prev {
+            transform: translateX(-65px);
+        }
+    }
+
+    .btn-center {
+        text-align: center;
+        margin-top: 80px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 50px;
+        }
+    }
+
+    &.MvpDevProcess {
+        background-color: #222222;
+        position: relative;
+        &::before {
+            content: url(../../../../../../public/images/services/yellowStar.svg);
+            position: absolute;
+            top: 0;
+            left: -10px;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}

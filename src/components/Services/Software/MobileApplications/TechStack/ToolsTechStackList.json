@@ -1,0 +1,56 @@
+[
+    {
+      "title": "Front-End",
+      "images": [
+        "/images/services/react-icon.svg",
+        "/images/services/java-icon.svg",
+        "/images/services/vue-icon.svg"
+      ]
+    },
+    {
+      "title": "Back-End",
+      "images": [
+        "/images/services/node-icon.svg",
+        "/images/services/python-icon.svg",
+        "/images/services/ruby-icon.svg"
+      ]
+    },
+    {
+      "title": "Databases",
+      "images": [
+        "/images/services/mysql-icon.svg",
+        "/images/services/postgresql-icon.svg",
+        "/images/services/mongo-icon.svg",
+        "/images/services/redis-icon.svg"
+      ]
+    },
+    {
+      "title": "Communication",
+      "images": [
+        "/images/services/api-icon.svg",
+        "/images/services/graph-icon.svg",
+        "/images/services/socket-icon.svg"
+      ]
+    },
+    {
+      "title": "Deployment Tools",
+      "images": [
+        "/images/services/docker-icon.svg",
+        "/images/services/kuber-icon.svg",
+        "/images/services/git-icon.svg",
+        "/images/services/github-icon.svg",
+        "/images/services/vscode-icon.svg",
+        "/images/services/sublime-icon.svg"
+      ]
+    },
+    {
+      "title": "Server",
+      "images": [
+        "/images/services/apache-icon.svg",
+        "/images/services/nginx-icon.svg",
+        "/images/services/azure-icon.svg",
+        "/images/services/aws-lambda-icon.svg"
+      ]
+    }
+  ]
+  

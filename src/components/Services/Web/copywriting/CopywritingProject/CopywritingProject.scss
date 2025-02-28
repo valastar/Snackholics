@@ -1,0 +1,152 @@
+.copywritingProject{
+    padding: 150px 0;
+    background: #DCA629;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 2168.94px;
+        height: 100%;
+        background: url(../../../../../../public/images/services/ecommerceFeatures.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    @media screen and (max-width: 992px){
+        padding: 100px 0;
+    }
+    @media screen and (max-width: 767px){
+        padding: 80px 0;
+    }
+    .title {
+        max-width: 671px;
+        margin-bottom: 50px;
+        h2{
+          font-size: 60px;
+          font-weight: 700;
+          color:#fff;
+          margin-bottom: 40px;
+          text-transform: capitalize;
+          @media (max-width: 992px) {
+            font-size: 44px;
+            margin-bottom: 20px;
+          }
+          span{
+            color: #521212;
+          }
+        }
+        p{
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 5px;
+            @media screen and (max-width: 992px){
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+        .btn-center{
+            margin-top: 40px;
+            @media screen and (max-width: 768px){
+                margin-top: 40px;
+            }
+        }
+      }
+      .copywritingLine{
+        position: relative;
+        z-index: 0;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 37%;
+            top: -39%;
+            width: 977px;
+            height: 366px;
+            transform: translate(-50%, -50%);
+            background: url(../../../../../../public/images/services/copywritingLine.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+            @media (max-width: 1600px){
+            left: 39%;
+            top: -30%;
+            transform: translate(-50%, -50%);
+            width: 870px;
+            }
+            @media (max-width: 1200px){ 
+               display: none;
+            }
+        }
+        .col-md-4{
+            &:nth-child(1){
+                margin-top: -15px;
+            }
+            &:nth-child(2){
+                margin-top: -100px;
+            }
+            &:nth-child(3){
+                margin-top: -300px;
+            }
+            @media (max-width: 992px){
+                &:nth-child(1){
+                    margin-top: 0;
+                }
+                &:nth-child(2){
+                    margin-top: 0;
+                }
+                &:nth-child(3){
+                    margin-top: 0;
+                }
+                
+            }
+        }
+          .copywritingProject__card{
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            @media (max-width: 992px){
+                padding: 20px 0;
+                
+            }
+            img{
+                width: 58px;
+                height: 58px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+                color: #521212;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.7);
+                margin-bottom: 0;
+            }
+            span{
+                position: absolute;
+                right: 18%;
+                top: -35px;
+                transform: translate(-50%, 0);
+                font-size: 200px;
+                color: rgb(82, 18, 18);
+                opacity: 0.08;
+                font-family: "Sf Pro Display Bold";
+                line-height: normal;
+                @media (max-width: 992px){
+                    right: 0%;
+                    top: -5px;
+                    font-size: 145px;
+                }
+            }
+        }
+      }
+}

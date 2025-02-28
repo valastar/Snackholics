@@ -1,0 +1,89 @@
+.achievements{
+    padding: 90px 0;
+    overflow: hidden;
+   & > div{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 40px;
+   }
+    @media screen and (max-width: 992px){
+       padding: 40px 0;
+    }
+    @media screen and (max-width: 600px){
+        text-align: center;
+    }
+    .heading{
+        font-size: 48px;
+        color: #fff;
+        line-height: normal;
+        margin: 0;
+        text-transform: capitalize;
+        font-weight: bold;
+        span{
+            color: rgba(220, 166, 41, 1);
+
+        }
+        @media screen and (max-width: 992px){
+            font-size: 38px;
+        }
+    }
+    .col-md-3{
+        &:nth-child(3){
+            .block{
+                position: relative;
+             &::after{
+                content: '';
+                position: absolute;
+               background-image: url(../../../../public/images/aboutUs/divider.svg);
+                width: 2px;
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                left:0;
+                top: 50%;
+                transform: translateY(-50%);
+                @media screen and (max-width: 600px){
+                    display: none;
+                }
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background-image: url(../../../../public/images/aboutUs/divider.svg);
+                width: 2px;
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                @media screen and (max-width: 600px){
+                    display: none;
+                }
+            }
+            }
+         }
+    }
+    .block{
+        text-align: center;
+        position: relative;
+        p{
+            font-size: 48px;
+            line-height: 1.8;
+            margin: 0;
+            color: #FFf;
+            @media screen and (max-width: 992px){
+                font-size: 44px;
+            }
+            @media screen and (max-width: 600px){
+                margin-top: 20px;
+            }
+        }
+        span{
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            display: block;
+        }
+    }
+}

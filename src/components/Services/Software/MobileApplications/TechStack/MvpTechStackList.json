@@ -1,0 +1,45 @@
+[
+    {
+      "title": "Front-End",
+      "images": [
+        "/images/services/react-icon.svg",
+        "/images/services/java-icon.svg",
+        "/images/services/vue-icon.svg"
+      ]
+    },
+    {
+      "title": "Back-End",
+      "images": [
+        "/images/services/node-icon.svg",
+        "/images/services/python-icon.svg",
+        "/images/services/ruby-icon.svg"
+      ]
+    },
+    {
+      "title": "Mobile",
+      "images": [
+        "/images/services/kotlin-icon.svg",
+        "/images/services/swift-icon.svg",
+        "/images/services/java-icon.svg",
+        "/images/services/obj-c-icon.svg"
+      ]
+    },
+    {
+      "title": "Databases",
+      "images": [
+        "/images/services/mysql-icon.svg",
+        "/images/services/postgresql-icon.svg",
+        "/images/services/mongo-icon.svg",
+        "/images/services/redis-icon.svg"
+      ]
+    },
+    {
+      "title": "Infrastructure",
+      "images": [
+        "/images/services/heroku-icon.svg",
+        "/images/services/aws-icon.svg",
+        "/images/services/gcp-icon.svg"
+      ]
+    }
+  ]
+  

@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Comprehensive Website Audit",
+        "imageSrc": "/images/services/pr1.svg",
+        "description": "Our process starts with a meticulous evaluation of your existing website. We scan for potential weaknesses, outdated elements, and functionality issues. Our web developers will analyze your site’s infrastructure, identifying room for enhancements to provide a seamless user experience."
+    },
+    {
+        "title": "Personalized Maintenance Strategy",
+        "imageSrc": "/images/services/pr2.svg",
+        "description": "After the audit, we craft a custom website maintenance plan tailored to your unique needs. We align this strategy with your business goals, ensuring the website continues to effectively serve as your digital storefront. This involves regular updates, SEO optimization, and content updates."
+    },
+    {
+        "title": "Regular Monitoring",
+        "imageSrc": "/images/services/pr3.svg",
+        "description": "Our team provides 24/7 monitoring, ensuring your website’s optimum performance at all times. We proactively identify potential issues before they escalate, and our swift response mechanisms tackle any arising challenges promptly. Ensuring your website’s uninterrupted, superior performance is our priority."
+    }
+]

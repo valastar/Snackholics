@@ -1,0 +1,90 @@
+.faqs{
+    padding: 100px 0;
+    overflow: hidden;
+    @media screen and (max-width: 992px){
+       padding: 80px 0;
+      }
+      @media screen and (max-width: 767px){
+        padding: 50px 0;
+       }
+      .title{
+        margin-bottom:50px;
+        text-align: center;
+        @media screen and (max-width: 600px){
+            margin-bottom: 30px;
+        }
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            color:#fff;
+            margin-bottom: 10px;
+            @media screen and (max-width: 992px){
+                font-size: 44px;
+            }
+            span{
+                color: #DCA629;
+            }
+        }
+    }
+      .accordion{ 
+        color: #fff;
+        .accordion-item{
+            border: none;
+            background-color: #1D1F20;
+            border-bottom: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            height: fit-content;
+            margin-top: 15px;
+        }
+        .accordion-button:not(.collapsed){
+            background-color: transparent;
+            box-shadow: none;
+        }
+        .accordion-button:focus{
+            box-shadow: none;
+        }
+        .accordion-button{
+            padding: 10px 0;
+            color: #fff;
+            background-color: #1D1F20;
+            font-size: 16px;
+            border: none;
+            justify-content: space-between;
+            font-family: "Poppins", sans-serif;
+           @media (max-width: 992px) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            
+           }
+           .accordion-body{
+            padding: 0 0 10px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height:1.8;
+        }
+        .accordion-button::after{
+            background-image: url(../../../../public/images/portfolio/faq1.svg);
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            transform: rotate(0deg);
+            margin-top: 6px;
+            @media (max-width: 600px) {
+                margin-left: 30px;
+            }
+
+        }
+        .accordion-button:not(.collapsed)::after{
+            background-image: url(../../../../public/images/portfolio/faq1.svg);
+        }
+        }
+        .btn-center{
+            text-align: center;
+            margin-top: 70px;
+            @media screen and (max-width: 768px){
+                margin-top: 40px;
+            }
+        }
+}

@@ -1,0 +1,32 @@
+[
+    {
+      "imageSrc": "/images/services/benefit-1.svg",
+        "title": "Cost-Effectiveness",
+      "description": "SaaS applications reduce the need for costly on-premise hardware and infrastructure, offering a more budget-friendly alternative for Canadian companies of all sizes."
+    },
+    {
+      "imageSrc": "/images/services/benefit-2.svg",
+        "title": "Scalability",
+      "description": "Whether your business is growing or experiencing fluctuating demands, SaaS applications can scale seamlessly, ensuring you only pay for what you need."
+    },
+    {
+      "imageSrc": "/images/services/benefit-3.svg",
+        "title": "Accessibility",
+      "description": "SaaS platforms provide easy access from any device with an internet connection, enabling remote work and enhancing flexibility for Canada's diverse workforce."
+    },
+    {
+      "imageSrc": "/images/services/benefit-4.svg",
+        "title": "Security & Compliance",
+      "description": "With robust security protocols and compliance with Canadian data protection laws, SaaS solutions provide a high level of safety for sensitive information."
+    },
+    {
+      "imageSrc": "/images/services/benefit-5.svg",
+        "title": "Ongoing Support & Updates",
+      "description": "Benefit from automatic updates and 24/7 customer support, ensuring your applications remain current and reliable without extra downtime."
+    },
+    {
+      "imageSrc": "/images/services/benefit-6.svg",
+        "title": "Customization",
+      "description": "Customization of SaaS empowers Canadian businesses to tailor their platforms precisely by incorporating custom themes, scripts, and plugins."
+    }
+  ]

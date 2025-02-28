@@ -1,0 +1,91 @@
+.seoServices{
+    padding: 150px 0;
+    background: #222222;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 2168.94px;
+        height: 100%;
+        background: url(../../../../../../public/images/services/section-bg-before.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    @media screen and (max-width: 992px){
+        padding: 100px 0;
+    }
+    @media screen and (max-width: 767px){
+        padding: 80px 0;
+    }
+    .title {
+        text-align: center;
+    
+        h2{
+          font-size: 60px;
+          font-weight: 700;
+          color:#fff;
+          margin-bottom: 30px;
+          @media (max-width: 1366px) {
+            font-size: 56px;
+          }
+          @media (max-width: 992px) {
+            font-size: 44px;
+          }
+          span{
+            color: rgba(220, 166, 41, 1);
+          }
+        }
+        p{
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 5px;
+            @media screen and (max-width: 992px){
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+      }
+      .seoServices__card{
+        background: #0B0B0B;
+        border-radius: 20px;
+        padding: 80px 20px 40px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        width: 100%;
+        min-height: 325px;
+        position: relative;
+        margin-top: 100px;
+        img{
+            width: 110px;
+            height: 140px;
+            position: absolute;
+            left: 40px;
+            top: -70px;
+        }
+        h3{
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0;
+        }
+    }
+    .btn-center{
+        text-align: center;
+        margin-top: 80px;
+        @media screen and (max-width: 768px){
+            margin-top: 40px;
+        }
+    }
+}

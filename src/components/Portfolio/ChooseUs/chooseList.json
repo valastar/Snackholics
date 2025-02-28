@@ -1,0 +1,26 @@
+[
+  {
+    "chooseImg": "/images/portfolio/choose1.svg",
+    "chooseTitle": "Extensive Style \nGuide"
+    },
+  {
+    "chooseImg": "/images/portfolio/choose3.svg",
+    "chooseTitle": "Beautiful \nComponents"
+    },
+  {
+    "chooseImg": "/images/portfolio/choose4.svg",
+    "chooseTitle": "Five Stars \nCustomer Support"
+    },
+  {
+    "chooseImg": "/images/portfolio/choose5.svg",
+    "chooseTitle": "Highly Adjustable \nWebsite Layouts"
+    },
+    {
+      "chooseImg": "/images/portfolio/choose2.svg",
+      "chooseTitle": "Smooth CSS3 \nAnimations"
+      },
+    {
+      "chooseImg": "/images/portfolio/choose6.svg",
+      "chooseTitle": "Fully Customizable \nColor Schemes"
+      }
+]

@@ -1,0 +1,49 @@
+.banner {
+    background: #0B0B0B url(../../../../public/images/home/homeBannerBack.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 0 0;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width:1200px) {
+        padding: 170px 0 0;
+    }
+
+    @media screen and (max-width:992px) {
+        padding: 140px 0 0;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.mySwiper {
+    margin-top: 50px;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 20px 0 !important;
+    .swiper-wrapper {
+        align-items: center;
+    }
+
+    .imgBlock {
+        text-align: start;
+
+        img {
+            width: 222px;
+            height: auto;
+
+            @media screen and (max-width: 1200px) {
+                width: 190px;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+    }
+}

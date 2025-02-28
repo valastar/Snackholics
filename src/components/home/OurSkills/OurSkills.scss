@@ -1,0 +1,51 @@
+.ourSkills{
+    padding: 100px 0;
+    overflow: hidden;
+    @media screen and (max-width: 768px){
+        padding: 50px 0;
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 50px;
+        @media screen and (max-width: 768px){
+            margin-bottom: 30px;
+        }
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            color:#fff;
+            margin-bottom: 10px;
+            @media screen and (max-width: 992px){
+                font-size: 44px;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    h4{
+        font-size: 24px;
+        font-weight: 700;
+        color: #DCA629;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        @media screen and (max-width: 992px){
+            font-size: 20px;
+        }
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li{
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 15px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

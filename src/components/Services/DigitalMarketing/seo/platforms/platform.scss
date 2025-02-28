@@ -1,0 +1,177 @@
+.Seo-Platforms {
+    padding: 150px 0;
+    background: #0B0B0B;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: none;
+        height: 0.01px;
+        width: 0.94px;
+        z-index: -81;
+
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: 100px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 80px 0;
+    }
+
+    .title {
+        text-align: center;
+
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 30px;
+
+            @media (max-width: 992px) {
+                font-size: 44px;
+            }
+
+            span {
+                color: rgba(220, 166, 41, 1);
+            }
+        }
+
+        p {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 5px;
+
+            @media screen and (max-width: 992px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .plat-card {
+        background: #222222;
+        border-radius: 0px;
+        text-align: left;
+        width: 100%;
+        min-height: 300px;
+        position: relative;
+        padding: 120px 60px 60px 30px;
+        margin-top: 100px;
+
+        @media screen and (max-width:767px) {
+            margin-top: 50px;
+            min-height: auto;
+        }
+
+        &::after {
+            content: '';
+            width: 130px;
+            height: 130px;
+            background-color: #0b0b0b;
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            clip-path: polygon(100% 0, 100% 150%, 0% 100%);
+        }
+
+        .plat-head {
+            background-color: #DCA629;
+            position: absolute;
+            left: 0px;
+            top: -20px;
+            width: 95%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: visible;
+            padding: 20px 20px 20px 30px;
+            min-height: 100px;
+
+            &::after {
+                content: '';
+                width: 80px;
+                height: 80px;
+                background-color: #222222;
+                position: absolute;
+                bottom: -1px;
+                right: -1px;
+                clip-path: polygon(100% 0, 100% 150%, 0% 100%);
+            }
+
+            .plat-img-wrapper {
+                position: relative;
+
+                img {
+                    width: 90px;
+                    z-index: 22;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-60px, -30px);
+                }
+            }
+
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+                color: #521212;
+                margin-bottom: 0;
+                max-width: 250px;
+
+                @media screen and (max-width:767px) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0;
+        }
+    }
+
+    .btn-center {
+        text-align: center;
+        margin-top: 80px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 40px;
+        }
+    }
+
+    &.MobileServices {
+        background-color: #222222;
+
+        .plat-card {
+            background-color: #0B0B0B;
+
+            &::after {
+                content: '';
+
+                background-color: #222222;
+
+            }
+
+            .plat-head {
+                background-color: #DCA629;
+
+
+                &::after {
+                    content: '';
+
+                    background-color: #0B0B0B;
+
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,17 @@
+[
+    {
+      "imageSrc": "/images/services/m-plat-1.svg",
+        "title": "IOS APP",
+      "description": "We know what it takes to create a great iPhone app since we've previously created over 100+ applications in various categories. Likewise, we understand what it takes to transform a simple app concept into a profitable mobile app."
+    },
+    {
+      "imageSrc": "/images/services/m-plat-2.svg",
+        "title": "Android APP",
+      "description": "Our full-stack Android mobile app developers create mobile applications sponsored and published by Forbes, Business Insider, and other publications, using the most up-to-date technology and industry expertise."
+    },
+    {
+      "imageSrc": "/images/services/m-plat-3.svg",
+        "title": "Cross-Platform APP",
+      "description": "We specialize in developing custom mobile app development using cross-platform mobile app solution services for Android and iOS devices. Using Flutter, and React Native, we develop custom mobile applications that work smoothly on various platforms."
+    }
+  ]

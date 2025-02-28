@@ -1,0 +1,11 @@
+.portfolioBanner{
+    padding: 120px 0 0;
+    height: auto;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    @media screen and (max-width: 992px){
+        padding: 85px 0 0;       
+    }
+}

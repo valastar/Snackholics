@@ -1,0 +1,128 @@
+.journey{
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width:992px){
+       padding: 50px 0;
+      }
+    .innerSection{
+        background:url('../../../../public/images/aboutUs/journeyBg.svg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        border: 1px solid #2E2F45;
+        padding: 100px 40px;
+        overflow: hidden;
+        @media screen and (max-width:992px){
+          padding: 30px 20px;
+         }
+         .title{
+          max-width: 967px;
+          text-align: center;
+          margin: 0 auto 0px;
+          @media screen and (max-width: 992px){
+              margin-bottom: 30px;
+            }
+          h2{
+              font-size: 52px;
+              color: rgba(82, 18, 18, 1);
+              font-weight: bold;
+              margin-bottom: 20px;
+              font-family: "Sf Pro Display Bold",sans-serif;
+              @media screen and (max-width: 992px){
+                  font-size: 38px;
+                }
+          }
+          p{
+              font-size: 18px;
+              color: rgba(0, 0, 0, 0.7);
+              line-height: 1.8;
+              margin: 0 auto;
+              max-width: 740px;
+          }
+      }
+      .btns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 40px;
+        gap: 15px;
+        justify-content: center;
+        @media (max-width: 600px) {
+            margin-top: 10px;
+        }
+
+        a {
+            background: rgba(0, 0, 0, 1);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-size: 16px;
+            text-decoration: none;
+            border: 1px solid rgba(0, 0, 0, 1);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            font-family: "Sf Pro Display Bold";
+
+            svg {
+                margin-left: 10px;
+
+                path {
+                    fill: #fff;
+                }
+
+            }
+
+            &:hover {
+                background: #fff;
+                color: rgba(0, 0, 0, 1);
+                border: 1px solid #fff;
+
+                svg {
+                    path {
+                        fill: rgba(0, 0, 0, 1);
+                    }
+
+                }
+            }
+
+            &:last-child {
+                background-color: transparent;
+                border: 1px solid rgba(0, 0, 0, 1);
+                color: rgba(0, 0, 0, 1);
+
+                svg {
+                    margin-right: 10px;
+                    margin-left: 0;
+                    path {
+                        fill: rgba(0, 0, 0, 1);
+                    }
+                }
+
+                &:hover {
+                    background: #fff;
+                    border: 1px solid #fff;
+                    color: #02021A;
+
+                    svg {
+                        path {
+                            fill: #02021A;
+                        }
+                    }
+                }
+            }
+
+            @media (max-width: 992px) {
+                padding: 10px 15px;
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 600px) {
+                font-size: 14px;
+            }
+        }
+    }
+    }
+
+}

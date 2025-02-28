@@ -1,0 +1,297 @@
+.customFeatures {
+    padding: 150px 0;
+    background: #222222;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 2168.94px;
+        height: 100%;
+        background: url(../../../public/images/services/ecommerceFeatures.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 992px) {
+        padding: 100px 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding: 80px 0;
+    }
+
+    
+
+    .title {
+        text-align: center;
+
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 30px;
+
+            @media (max-width: 992px) {
+                font-size: 44px;
+            }
+
+            span {
+                color: rgba(220, 166, 41, 1);
+            }
+        }
+
+        p {
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.7);
+            margin: 0 auto 5px;
+            max-width: 800px;
+
+            @media screen and (max-width: 992px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .customFeatures__card {
+        background: #0B0B0B;
+        border-radius: 30px;
+        padding: 30px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        min-height: 320px;
+        position: relative;
+        margin-top: 100px;
+
+        img {
+            width: 140px;
+            height: 140px;
+            margin-top: -100px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0;
+        }
+    }
+
+    .btn-center {
+        text-align: center;
+        margin-top: 80px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 40px;
+        }
+    }
+
+
+
+    &.copyWritingServices {
+        background: #0B0B0B;
+
+        &::after {
+            display: none;
+        }
+
+        .customFeatures__card {
+            background: #222222;
+            min-height: 350px;
+        }
+    }
+    &.hostingServices {
+
+        .col-lg-4 {
+            .customFeatures__card {
+                background: #0B0B0B;
+                border-radius: 30px;
+                padding: 30px;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                min-height: 300px;
+                position: relative;
+                margin-top: 20px;
+                text-align: left;
+    
+                img {
+                    width: 70px;
+                    height: 70px;
+                    margin-bottom: 20px;
+                    margin-top: 0px;
+                }
+            }
+            &:nth-child(2) {
+                .customFeatures__card {
+                    background: #DCA629;
+
+                    h3 {
+                        color: #521212;
+                    }
+
+                    p {
+                        color: #521212;
+                    }
+                }
+            }
+        }
+
+        
+    }
+    &.seoServices{
+        .customFeatures__card{
+            background: #0B0B0B;
+            border-radius: 20px;
+            padding: 80px 20px 40px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 100%;
+            min-height: 325px;
+            position: relative;
+            margin-top: 100px;
+            img{
+                width: 110px;
+                height: 140px;
+                position: absolute;
+                left: 40px;
+                top: -70px;
+                margin-top: 0px;
+            }
+        }
+    }
+    &.CreateWebApps{
+        background-color: #0B0B0B;
+        &::after{
+            display: none;
+        }
+        .customFeatures__card{
+            background-color: #222222;
+            text-align: left;
+            min-height: 300px;
+            img{
+                margin-top: 0;
+                width: 70px;
+            height: 70px;
+            margin-bottom: 20px;
+            }
+        }
+        .col-lg-4{
+            &:nth-child(2) {
+                .customFeatures__card {
+                    background: #DCA629;
+    
+                    h3 {
+                        color: #521212;
+                    }
+    
+                    p {
+                        color: #521212;
+                    }
+                }
+            }
+        }
+    }
+    &.copywritingServices{
+        background-color: #0B0B0B;
+        .customFeatures__card{
+            background-color: #222222;
+            min-height: 400px;
+        }
+    }
+    &.ChatbotIntegration{
+        background-color: #DCA629;
+        .title{
+            h2{
+                span{
+                    color: #521212;
+                }
+            }
+        }
+        .customFeatures__card{
+            background-color: #0B0B0B;
+            min-height: 420px;
+            text-align: left;
+            img {
+                margin-top: 0;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+        }
+        .col-lg-4 {
+            &:nth-child(2) {
+                .customFeatures__card {
+                    background: #521212;
+                }
+            }
+        }
+    }
+    &.maintenanceProcess{
+        background-color: #DCA629;
+        text-align: center;
+        .title{
+            h2{
+                span{
+                    color: #521212;
+                }
+            }
+        }
+        .customFeatures__card{
+            background-color: #0B0B0B;
+            min-height: 420px;
+            text-align: left;
+            img {
+                margin-top: 0;
+                position: relative;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+        }
+       
+    }
+    &.SmmPlatforms{
+        background-color: #222222;
+        text-align: center;
+       
+        .customFeatures__card{
+            background-color: #0B0B0B;
+            min-height: 420px;
+            text-align: left;
+            img {
+                margin-top: 0;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+        }
+       
+    }
+    &.SaasBenefits{
+        background-color: #0B0B0B;
+        &::after{
+            display: none;
+        }
+        .customFeatures__card{
+            background-color: #222222;
+            min-height: 310px;
+        }
+    }
+}
+

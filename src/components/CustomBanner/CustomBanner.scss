@@ -1,0 +1,145 @@
+.customBanner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px 0 0;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    @media screen and (max-width: 992px){
+        padding: 85px 0 0;       
+    }
+    &::before{
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-color: #0b0b0bb2;
+        position: absolute;
+        top: 0px;
+    }
+    .title{
+        
+        margin: 0 auto;
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            color:#fff;
+            margin-bottom: 10px;
+            @media screen and (max-width: 992px){
+                font-size: 44px;
+            }
+            span{
+                color: rgba(220, 166, 41, 1);
+        
+            }
+        }
+        p{
+            max-width: 700px;
+            margin: 0 auto;
+            color:#ffffffce !important;
+            font-size: 20px;
+            @media screen and (max-width: 992px){
+                font-size: 16px;
+                
+            }
+        }
+    }
+    &.copywritingBanner{
+        background: url(../../../public/images/services/copywriingbanner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .title{
+            max-width: 1000px;
+        }
+    }
+    &.ChatbotBanner {
+        background-image: url(../../../public/images/services/chatbot-banner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.AiPocMvpBanner {
+        background-image: url(../../../public/images/services/AiPocMvpBanner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.SaasAiBanner {
+        background-image: url(../../../public/images/services/saasAiBanner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.webMaintenanceBanner {
+        background-image: url(../../../public/images/services/maintainenceBanner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &::before{
+            display: none;
+        }
+    }
+    &.MobileAppBanner {
+        background-image: url(../../../public/images/services/mobileApp-bg.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.WebAppBanner {
+        background-image: url(../../../public/images/services/WebAppDevelopmentBannerPic.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.SaasSolBanner {
+        background-image: url(../../../public/images/services/SaasSolBanner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.MvpSolutions {
+        background-image: url(../../../public/images/services/mvp-banner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.SeoBanner {
+        background-image: url(../../../public/images/services/seo-banner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .title{
+            p{
+                max-width: 930px;
+            }
+        }
+    }
+    &.SmmBanner {
+        background-image: url(../../../public/images/services/smm-banner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.brandingBanner {
+        background-image: url(../../../public/images/services/brandingBanner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &::before{
+            display: none;
+        }
+    }
+    &.hoistingBanner {
+        background-image: url(../../../public/images/services/hoistingBanner.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &::before{
+            display: none;
+        }
+    }
+}

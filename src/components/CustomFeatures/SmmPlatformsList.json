@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Facebook Marketing",
+        "imageSrc": "/images/services/pr1.svg",
+        "description": "Facebook social media marketing is an effective and affordable way to promote your brand. Quick Growth manages your marketing budget and optimizes your ads while showcasing your customer support. Our services enhance your Facebook presence to expand reach and establish brand authority."
+    },
+    {
+        "title": "Twitter Marketing",
+        "imageSrc": "/images/services/pr2.svg",
+        "description": "Invest in Twitter social media marketing to elevate your brands visibility. As your dedicated agency, we use data tracking to identify your target audience and develop both organic and paid strategies. Trust our team to create a clear action plan that aligns with your objectives and drives traffic to your online store."
+    },
+    {
+        "title": "Instagram Marketing",
+        "imageSrc": "/images/services/pr3.svg",
+        "description": "Connect with customers and build a community through Instagram social media marketing. Quick Growth experts enhance your profile, launch sponsored ads, and utilize engaging content like reels and stories to tell your brands story. Partner with us to refine your strategy using analytics for optimal results."
+    },
+    {
+        "title": "LinkedIn Marketing",
+        "imageSrc": "/images/services/pr4.svg",
+        "description": "Our LinkedIn marketing agency is dedicated to enhancing your professional reputation on social media. We craft tailored strategies to differentiate your brand, manage your company page, and connect with industry leaders. Our team implements best practices to ensure your LinkedIn marketing success."
+    },
+    {
+        "title": "YouTube Marketing",
+        "imageSrc": "/images/services/pr5.svg",
+        "description": "Over 90% of online shoppers discover brands through YouTube marketing videos. Enhance your YouTube strategy to capture attention and drive action. Our marketing company helps you understand your target audience, improve video quality, and create content that resonates with your ideal customers."
+    },
+    {
+        "title": "Pinterest Marketing",
+        "imageSrc": "/images/services/pr6.svg",
+        "description" : "Convert more browsers into customers with Quick Growth Pinterest marketing solutions. Our specialists optimize your pins with proper categorization, text overlays, keyword-rich 'description's, and strong CTAs. We also track analytics to assess pin performance and enhance your marketing campaign."
+    },
+    {
+        "title": "Snapchat Marketing",
+        "imageSrc": "/images/services/pr7.svg",
+        "description": "With over 238 million daily Snapchat users, leverage the platform for entertainment and communication. Thrive offers hourly consultations to help you develop effective social media marketing ideas and attract new followers. Our strategies ensure your Snapchat tactics drive positive engagement with prospects."
+    },
+    {
+        "title": "TikTok Marketing",
+        "imageSrc": "/images/services/pr8.svg",
+        "description": "Looking for data-driven TikTok marketing tips? Our firm provides hourly consultations with specialists to help you maximize TikTok for Business. Contact us or call 000.302.4748 to discover how to enhance your social media marketing on TikTok."
+    }
+]

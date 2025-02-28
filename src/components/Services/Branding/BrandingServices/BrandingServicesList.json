@@ -1,0 +1,26 @@
+[
+    {
+      "img": "/images/services/service1.svg",
+      "title": "Brand Identity"
+    },
+    {
+      "img": "/images/services/service2.svg",
+      "title": "Logo Design"
+    },
+    {
+      "img": "/images/services/service3.svg",
+      "title": "Printing Materials"
+    },
+    {
+      "img": "/images/services/service4.svg",
+      "title": "Brand Launch"
+    },
+    {
+      "img": "/images/services/service5.svg",
+      "title": "Social Media"
+    },
+    {
+      "img": "/images/services/service6.svg",
+      "title": "Digital Marketing"
+    }
+  ]

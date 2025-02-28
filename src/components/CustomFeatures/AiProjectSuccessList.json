@@ -1,0 +1,32 @@
+[
+    {
+      "imageSrc": "/images/services/smm-1.svg",
+        "title": "Uncertainty in AI's Business Impact",
+      "description": "Unlock AI's transformative potential for your business. Our thorough assessment reveals how AI can streamline operations and elevate customer experiences, ensuring seamless alignment with your strategic goals."
+    },
+    {
+      "imageSrc": "/images/services/smm-2.svg",
+        "title": "Technical Feasibility of AI Projects",
+      "description": "Ensure your AI projects are technically sound with our expert evaluation. We analyze your concepts to confirm their viability and align them for successful outcomes."
+    },
+    {
+      "imageSrc": "/images/services/mvp-icon-2.svg",
+        "title": "Evaluating AI's Role in Strategic Goals",
+      "description": "Ensure your AI initiatives support your strategic goals for maximum business impact. We provide expert planning to integrate AI where it can deliver the greatest results."
+    },
+    {
+      "imageSrc": "/images/services/smm-4.svg",
+        "title": "Allocating Resources for AI Initiatives",
+      "description": "Discover how AI can drive meaningful change in your business. We thoroughly assess its potential to optimize processes and elevate customer experiences, aligning technology with your long-term vision."
+    },
+    {
+      "imageSrc": "/images/services/mvp-icon-1.svg",
+        "title": "Managing Risk in AI Development",
+      "description": "Minimize risks in AI development with our robust risk management strategies. We proactively identify challenges and implement safeguards to ensure your projects stay on course."
+    },
+    {
+      "imageSrc": "/images/services/mvp-icon-3.svg",
+        "title": "Scaling AI Solutions from Concept to Production",
+      "description": "Accelerate the transition from PoC to full-scale AI production with our support. Our expertise guarantees smooth integration into your workflows, driving both innovation and sustainable growth."
+    }
+  ]

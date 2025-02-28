@@ -1,0 +1,218 @@
+.ourProcess{
+    padding: 100px 0 200px;
+    overflow: hidden;
+    @media screen and (max-width: 768px){
+        padding: 50px 0 90px;
+    }
+    .title{
+        text-align: center;
+        margin-bottom: 50px;
+        @media screen and (max-width: 768px){
+            margin-bottom: 30px;
+        }
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            color:#fff;
+            margin-bottom: 10px;
+            @media screen and (max-width: 992px){
+                font-size: 44px;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .swiper_container {
+        height: auto !important;
+        padding: 20px 0 70px;
+        overflow: hidden;
+        .swiper-slide {
+            height: 100% !important;
+            border-radius: 17px;
+            z-index: 10;
+            position: relative;
+            display: flex;
+            transition: transform 0.3s;
+            transform: scale(1);
+            width: auto !important;
+            margin: 0 !important;
+            @media screen and (max-width: 600px){
+                width: 100% !important;
+                object-fit: cover;
+                display: block;
+                transform: none !important;
+                margin-right: 10px !important;
+            }
+            &.swiper-slide-active{
+                .image-wrapper{
+                    &::after{
+                        backdrop-filter: none !important;
+                    }
+                }
+                .slide-title{
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+            }
+            .slide-title {
+              font-weight: 600;
+              color: white;
+              font-size: 21px;
+              text-align: center;
+              padding:0 30px 0;
+              position: absolute;
+              bottom: 15px;
+              z-index: 2;
+              text-transform: uppercase;
+            }
+            .image-wrapper {
+             position: relative;
+             &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 90%);
+                z-index: 1;
+                border-radius: 10px;
+                backdrop-filter: blur(1.5px);
+             }
+              img {
+                width: 100% !important;
+                height: 578px !important;
+                object-fit: cover;
+                border-radius: 10px;
+                @media screen and (max-width: 992px){
+                    height: 378px !important;
+                }
+                @media screen and (max-width: 565px){
+                    height: 100% !important;
+                    
+                }
+              }
+            }
+          }
+          .swiper-pagination{
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+            .swiper-pagination-bullet{
+                background: transparent;
+                border: 2px solid #848484;
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                border-radius: 50%;
+                margin: 0 5px;
+                opacity: 1;
+                @media screen and (max-width: 768px){
+                    width: 13px;
+                    height: 13px;
+                    
+                }
+            }
+            .swiper-pagination-bullet-active{
+                background: rgba(220, 166, 41, 1);
+                border: 1px solid rgba(220, 166, 41, 1);
+            }
+          }
+      }
+      .btn-center{
+        text-align: center;
+        margin-top: 120px;
+        @media screen and (max-width: 768px){
+            margin-top: 70px;
+        }
+    }
+    &.WebMaintenanceProcess{
+        padding: 100px 0 150px;
+        overflow: hidden;
+        background-color: #DCA629;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 2168.94px;
+            height: 100%;
+            background: url(../../../../public/images/services/section-bg-before.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+        @media screen and (max-width: 768px){
+            padding: 50px 0 90px;
+        }
+        .title{
+            text-align: center;
+            margin-bottom: 50px;
+            @media screen and (max-width: 768px){
+                margin-bottom: 30px;
+            }
+            h2{
+                font-size: 60px;
+                font-weight: 700;
+                color:#fff;
+                margin-bottom: 10px;
+                span{
+                    color: #521212;
+                }
+                @media screen and (max-width: 992px){
+                    font-size: 44px;
+                }
+            }
+            p{
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        .swiper_container {
+            height: auto !important;
+            padding: 20px 0 70px;
+            overflow: hidden;
+         
+              .swiper-pagination{
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+                z-index: 2;
+                .swiper-pagination-bullet{
+                    background: transparent;
+                    border: 2px solid #ffffffb0;
+                    width: 15px;
+                    height: 15px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    margin: 0 5px;
+                    opacity: 1;
+                    @media screen and (max-width: 768px){
+                        width: 13px;
+                        height: 13px;
+                        
+                    }
+                }
+                .swiper-pagination-bullet-active{
+                    background: rgb(255, 255, 255);
+                    border: 1px solid #ffffffb0;
+                }
+              }
+          }
+          .btn-center{
+            text-align: center;
+            margin-top: 120px;
+            @media screen and (max-width: 768px){
+                margin-top: 70px;
+            }
+        }
+    }
+}

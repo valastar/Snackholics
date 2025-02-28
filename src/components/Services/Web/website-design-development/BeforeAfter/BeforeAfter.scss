@@ -1,0 +1,47 @@
+.beforeAfter{
+    background: url(../../../../../../public/images/services/beforeAfter.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    margin: 80px 0;
+    @media screen and (max-width: 767px){
+       margin: 80px 0 40px;
+     }
+    h2{
+        font-size: 60px;
+        font-weight: 700;
+        color:#521212;
+        margin-bottom: 20px;
+        @media screen and (max-width: 992px){
+            font-size: 44px;  
+        }
+        @media screen and (max-width: 767px){
+           margin-top: 50px; 
+           font-size: 38px;
+        }
+    }
+    p{
+        font-size: 24px;
+        color: #0B0B0B;
+        margin: 0;
+        @media screen and (max-width: 992px){
+            font-size: 18px;  
+        }
+        @media screen and (max-width: 767px){
+            font-size: 16px;
+         }
+    }
+    img{
+        width: 100%;
+        margin-top: 50px;
+        box-shadow: -25px 20px 44px 0px rgba(3, 3, 3, 0.4);
+        border-radius: 24px;
+    }
+    .before{
+        margin-top: -90px;
+    }
+    .after{
+        margin-bottom: -50px;
+    }
+}

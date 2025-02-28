@@ -1,0 +1,49 @@
+.strategic{
+    padding: 100px 0 ;
+    
+    @media screen and (max-width:550px) {
+        padding: 50px 0;
+        
+    }
+
+    .content{
+        text-align: center;
+        h2{
+            font-size: 52px;
+            font-weight: 700;
+            color:#fff;
+            margin-bottom: 30px;
+
+            @media screen and (max-width:1193px) {
+                font-size: 48px;
+            }
+            @media screen and (max-width:993px) {
+                font-size: 42px;
+            }
+            @media screen and (max-width:500px) {
+                font-size: 28px;
+            }
+
+            span{
+                color: #DCA629;
+            }
+        }
+        .subHeading{
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 30px;
+            display: block;
+        }
+        p{
+            color:rgba(255, 255, 255, 0.7);
+            font-size: 24px;
+            line-height: 42px;
+            @media screen and (max-width: 992px){
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+        
+    }
+}
+

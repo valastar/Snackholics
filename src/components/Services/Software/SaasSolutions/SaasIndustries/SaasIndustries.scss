@@ -1,0 +1,103 @@
+.SaasIndustries{
+    padding: 100px 0;
+    background: #0B0B0B;
+    overflow: hidden;
+    position: relative;
+    margin: 100px 0;
+    @media screen and (max-width: 992px){
+       padding: 50px 0;
+       margin: 30px 0;
+      }
+    &.mvpbenefits{
+        &::before{
+                content: "";
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 2168.94px;
+                height: 100%;
+                background: url(../../../../../../public/images/services/section-bg-before.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 0;
+        }
+        .btn-center{
+            margin-top: 50px;
+            display: none;
+        }
+    }  
+      .title{
+          text-align: center;
+          margin-bottom:80px;
+          @media screen and (max-width: 992px){
+              margin-bottom: 55px;
+          }
+          h2{
+              font-size: 60px;
+              font-weight: 700;
+              color:#fff;
+              margin-bottom: 10px;
+              @media screen and (max-width: 992px){
+                  font-size: 44px;
+              }
+              span{
+                  color: #DCA629;
+              }
+          }
+          p{
+              font-size: 24px;
+              color: rgba(255, 255, 255, 0.7);
+              @media screen and (max-width: 600px){
+                  font-size: 18px;
+              }
+          }
+      }
+      .industry{
+          background: #222222;
+          padding: 20px;
+          border-radius: 30px;
+          margin-bottom: 28px;
+          min-height: 230px;
+      .block{
+          backdrop-filter: blur(30px);
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          height: 100%;
+          transition: all 0.3s ease;
+         @media screen and (max-width: 992px){
+             height: auto;         
+         }
+          &:hover{
+              transform: translateY(-5px);
+          }
+          img{
+              width: 65px;
+              height: 65px;
+          }
+          h3{
+              font-size: 24px;
+              font-weight: 700;
+              color: #fff;
+              margin-bottom: 0;
+              font-family: "Sf Pro Display Bold";
+              @media screen and (max-width: 992px){
+                  font-size: 18px;
+              }
+          }
+        }
+        p{
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.726);
+            margin: 10px 0;
+            @media screen and (max-width: 992px){
+                font-size: 14px;
+            }
+        }
+    }
+    .btn-center{
+        margin-top: 50px;
+    }
+}

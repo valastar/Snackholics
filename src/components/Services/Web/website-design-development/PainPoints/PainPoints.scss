@@ -1,0 +1,63 @@
+.painPoints{
+    padding: 100px 0;
+    @media screen and (max-width: 992px){
+        padding: 50px 0;
+    }
+    .title{
+        max-width: 950px;
+        margin: 0 auto 80px;
+        text-align: center;
+        @media screen and (max-width: 600px){
+            margin-bottom: 50px;
+        }
+        h2{
+            font-size: 60px;
+            font-weight: 700;
+            color:#fff;
+            margin-bottom: 20px;
+            @media screen and (max-width: 992px){
+                font-size: 44px;
+            }
+            span{
+                color: rgba(220, 166, 41, 1);
+            }
+        }
+    }
+    .wrapper{
+        background: url(../../../../../../public/images/services/painPoints.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        @media screen and (max-width: 600px){
+            background: none;
+        }
+        .col-md-3{
+                height: 800px;
+                display: flex;
+                align-items: end;
+                cursor: pointer;
+                border-left: 2px solid #313545;
+                @media screen and (max-width: 600px){
+                    height: auto;
+                    border-left: none;
+                    margin-top: 10px;
+                    background: rgba(42, 42, 42, 0.5);
+                }
+                &:hover{
+                    backdrop-filter: blur(10px);
+                }
+                p{
+                    font-size: 24px;
+                    color: #fff;
+                    font-weight: 500;
+                    margin: 0;
+                    line-height: normal;
+                    padding: 20px;
+                    font-family: 'Roboto' , sans-serif;
+                    @media screen and (max-width: 600px){
+                        font-size: 18px;
+                    }
+                }
+            }
+    }
+}

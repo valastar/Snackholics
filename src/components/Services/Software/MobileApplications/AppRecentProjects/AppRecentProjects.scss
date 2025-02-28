@@ -1,0 +1,116 @@
+.AppRecentProjects {
+    padding: 100px 0 150px;
+    overflow: hidden;
+  
+    @media screen and (max-width: 992px) {
+      padding: 50px 0 80px;
+    }
+  
+    .title {
+      max-width: 950px;
+      text-align: center;
+      margin: 0 auto 90px;
+  
+      @media screen and (max-width: 992px) {
+        margin-bottom: 30px;
+      }
+  
+      h2{
+        font-size: 60px;
+        font-weight: 700;
+        color:#fff;
+        margin-bottom: 20px;
+        @media (max-width: 1600px) {
+          font-size: 44px;
+        }
+        span{
+            color: #DCA629;
+        }
+      }
+    }
+  
+   
+  
+    .col-md-4{
+      &:nth-child(2){
+        .blockCards{
+          margin-top: 100px;
+          @media screen and (max-width: 767px) {
+            margin-top: 0;
+          }
+        }
+      }
+      &:nth-child(3){
+        .blockCards{
+          margin-top: 200px;
+          position: relative;
+          @media screen and (max-width: 767px) {
+            margin-top: 0;
+          }
+          &::after{
+            content: '';
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-image: url(../../../../../../public/images/services/yellowStar.svg);
+            background-size: contain;
+            top: -200px;
+            right: 50%;
+            transform: translateX(50%);
+            @media screen and (max-width: 767px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  
+    .block {
+      border-radius: 40px;
+      height: 100%;
+      position: relative;
+      padding-right: 15px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+  
+      .heading {
+        line-height: 36px;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: 600;
+        margin: 20px 0;
+        padding-left: 5px;
+        @media screen and (max-width: 992px) {
+          font-size: 20px;
+          line-height: 28px;
+       }
+      }
+      .tag{
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 5px;
+        @media screen and (max-width: 992px) {
+          font-size: 16px;
+          padding-left: 80px;
+        }
+       
+      }
+  
+    }
+    .btn-center{
+      text-align: center;
+      margin-top: 80px;
+  }
+
+  &.SaasRecent{
+    background-color: #222222;
+  }
+  }
+  

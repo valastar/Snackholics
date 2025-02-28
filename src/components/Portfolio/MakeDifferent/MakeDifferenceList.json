@@ -1,0 +1,23 @@
+[
+    {
+      "img": "/images/portfolio/make1.svg",
+      "heading": "Dedication",
+      "description": "A heartfelt dedication to honor and express gratitude for the people who inspire and support."
+    },
+    {
+      "img": "/images/portfolio/make2.svg",
+      "heading": "Smart Work",
+      "description": "Efficiently achieving goals through strategic planning, innovation, and optimized effort."
+    },
+    {
+      "img": "/images/portfolio/make3.svg",
+      "heading": "Collaboration",
+      "description": "Working together towards shared goals by combining strengths, ideas, & resources for greater success."
+    },
+    {
+      "img": "/images/portfolio/make4.svg",
+      "heading": "Technology",
+      "description": "The application of scientific knowledge to create tools, systems, and solutions that enhance everyday life and drive innovation."
+    }
+  ]
+  

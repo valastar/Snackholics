@@ -1,0 +1,98 @@
+.technologies{
+    padding: 150px 0 100px;
+    overflow: hidden;
+    @media screen and (max-width: 992px){
+        padding: 100px 0 50px;
+    }
+    @media screen and (max-width: 767px){
+      padding: 50px 0 50px;
+   }
+    .title {
+        max-width: 950px;
+        text-align: center;
+        margin: 0 auto;
+    
+        h2{
+          font-size: 60px;
+          font-weight: 700;
+          color:#fff;
+          margin-bottom: 10px;
+          @media (max-width: 1600px) {
+            font-size: 44px;
+          }
+        }
+      }
+      .block{
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            li{
+                margin: 100px 0 0;
+                width: 16.666%;
+                text-align: center;
+                position: relative;
+                @media screen and (max-width: 600px){
+                    width: 33.33%;
+                  }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    bottom: -50px;
+                    transform: translate(-50%, 0);
+                    width: 60%;
+                    height: 1px;
+                    background: rgba(57, 57, 57, 1);
+                    @media screen and (max-width: 600px){
+                      display: none; 
+                    }
+                  }
+                  &::before{
+                    content: "";
+                    position: absolute;
+                    left: 100%;
+                    top: 50%;
+                    transform: translate(-100%, -50%);
+                    width: 1px;
+                    height: 100%;
+                    background: rgba(57, 57, 57, 1);
+                    @media screen and (max-width: 600px){
+                      display: none;
+                    }
+                  }
+                  &:nth-child(6),
+                    &:nth-child(12){
+                    &::before{
+                      display: none;
+                    }
+                    }
+                    &:nth-child(7),
+                    &:nth-child(8),
+                    &:nth-child(9),
+                    &:nth-child(10),
+                    &:nth-child(11),
+                    &:nth-child(12){
+                    &::after{
+                      display: none;
+                    }
+                    }
+                @media screen and (max-width: 992px) {
+                    margin: 70px 0 0;
+                  }
+                img{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: contain;
+                    @media screen and (max-width: 992px){
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+      }
+}
