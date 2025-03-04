@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import SocialNetworkData from "./SocialNetwork.json";
 
 export default function SocialNetwork() {
