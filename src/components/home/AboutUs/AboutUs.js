@@ -1,27 +1,49 @@
-import React, { useEffect } from 'react'
-import './AboutUs.scss'
+import React, { useEffect } from 'react';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { Link } from 'react-scroll';
 
 function AboutUs() {
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
+
   return (
-    <React.Fragment>
-        <div className="aboutUs">
-            <div className="container bg-red">
-                <div className="content" data-aos="fade-up" data-aos-duration="1000">
-                    <p className='hello'>Hello!</p>
-                    <p className='want'><span>Want to create a digital product that stands out?</span> We're here to help a team of 100+ experts who design, build, and scale business for top brands and startups. Using the emerging technologies, we create solutions that are not just functional but also visually stunning and user-friendly. Let's work together to bring your vision to life."</p>
-                </div>
-               <div className="btn-center" data-aos="fade-up" data-aos-duration="1000">
-               <Link to="/" className="btn-custom">Let’s talk</Link>
-               </div>
-            </div>
+    <div className="relative overflow-hidden bg-[#0B0B0B] py-24 px-6 md:px-12 lg:px-20 text-white text-center">
+      <div className="container mx-auto max-w-4xl">
+        {/* Subtitle */}
+        <div data-aos="fade-up" data-aos-duration="800">
+          <span className="text-yellow-500 font-medium tracking-wider text-sm md:text-base uppercase">
+            About Us
+          </span>
         </div>
-    </React.Fragment>
-  )
+
+        {/* Main Heading */}
+        <div className="mt-4 md:mt-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Driven by Innovation, <br /> Focused on <span className="text-yellow-500">Results</span>
+          </h2>
+        </div>
+
+        {/* Description text */}
+        <div className="mt-6 md:mt-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+          <p className="text-gray-300 text-base md:text-lg">
+            We have quickly grown into a sophisticated organization, serving a diverse clientele ranging from dynamic startups to established enterprises. We expanded our expertise beyond blockchain to encompass a wide spectrum of cutting-edge technologies. Our portfolio of successful projects showcases our commitment to excellence and our ability to adapt, innovate, and deliver results.
+          </p>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-10 md:mt-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+          <Link 
+            to="services" 
+            className="px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg cursor-pointer"
+          >
+            Explore Services
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default AboutUs
+export default AboutUs;
