@@ -21,7 +21,7 @@ function AboutUs() {
         {/* Main Heading */}
         <div className="mt-4 md:mt-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            Driven by Innovation, <br /> Focused on <span className="text-yellow-500">Results</span>
+            Driven by Innovation, <br /> Focused on <span className="text-yellow-500">Result </span>
           </h2>
         </div>
 
