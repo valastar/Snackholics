@@ -1,33 +1,20 @@
 import { Link } from "react-router-dom";
-import style from "../Header.module.scss";
-
-import SocialNetworkData from "./SocialNetwork.json"
+import SocialNetworkData from "./SocialNetwork.json";
 
 export default function SocialNetwork() {
-    const handleMouseEnter = () => {
-        document.body.classList.add('hovered');
-    };
-    const handleMouseLeave = () => {
-        document.body.classList.remove('hovered');
-    };
   return (
-      <div className={`flex ${style.social_links}`}>
-          {SocialNetworkData.map(({ socialIcon, socialLink }, index) => {
-              return(
-                  <Link
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave}
-                      key={`social-${index}`}
-                      className={`flex justify-center items-center ${style.social}`}
-                      to={socialLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                  >
-                      <img width={15} height={16} src={socialIcon} alt={socialIcon} />
-                  </Link>
-              )
-            }
-          )}
-      </div>
+    <div className="flex items-center space-x-2">
+      {SocialNetworkData.map(({ socialIcon, socialLink }, index) => (
+        <a
+          key={`social-${index}`}
+          className="flex justify-center items-center w-8 h-8 rounded-full bg-gray-800 hover:bg-yellow-500/20 transition-all duration-300"
+          href={socialLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="w-4 h-4" src={socialIcon} alt="Social Icon" />
+        </a>
+      ))}
+    </div>
   );
 }

@@ -1,102 +1,109 @@
 import { Link } from "react-router-dom";
-import style from "../Header.module.scss";
-import styleMenu from "../mega-menu/megaMenu.module.scss"
+import { useState, useRef, useEffect } from "react";
 import ServiceMegaMenu from "../mega-menu/ServiceMegaMenu";
-import {useState} from "react";
-import OutsideClickHandler from "react-outside-click-handler";
 
-export default function Navigation() {
-    const [isActive, setActive] = useState("false");
-    // const [companyActive, setCompanyActive] = useState("false");
-    const handleToggle = () => {
-        setActive(!isActive);
+export default function Navigation({ isSticky }) {
+  const [servicesMenuOpen, setServicesMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setServicesMenuOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
     };
-    // const companyToggle = () => {
-    //     setCompanyActive(!companyActive);
-    // };
+  }, [menuRef]);
 
-    const handleMouseEnter = () => {document.body.classList.add('hovered');};
-    const handleMouseLeave = () => {document.body.classList.remove('hovered');};
+  // Toggle services menu
+  const toggleServicesMenu = () => {
+    setServicesMenuOpen(!servicesMenuOpen);
+  };
+
   return (
-      <ul className={`list-none flex ${style.main_menu}`}>
+    <div className="flex justify-between items-center w-full">
+      {/* Left side navigation items */}
+      <div className="flex items-center space-x-8">
+        <Link to="/">
+          <img
+            className={`h-14 transition-all duration-300 ${isSticky ? 'h-12' : 'h-14'}`}
+            src="/images/logo.svg"
+            alt="logo"
+          />
+        </Link>
+        
+        <ul className="hidden lg:flex items-center space-x-8">
           <li>
-              <Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                  to="/about-us">
-                  About Us
-              </Link>
-          </li>
-          {/* <li className={`relative ${companyActive ? '' : `${styleMenu.menu_active}`}`}>
-              <OutsideClickHandler
-                  onOutsideClick={() => {
-                      setCompanyActive("false");
-                  }}
-              >
-                  <button
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave} className={`${style.menuwrap} ${styleMenu.menuwrap}`} onClick={companyToggle}>
-                      COMPANY<i className="fa fa-chevron-down"></i>
-                  </button>
-                  <ul className={`list-none ${style.mini_dropdown} ${styleMenu.mini_dropdown}`} onClick={()=>{setCompanyActive("false")}}>
-                      <li><Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave} to="/company/about-us">About Company</Link></li>
-                      <li><Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave} to="/company/how-we-are">How We Work</Link></li>
-                      <li><Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave} to="/company/team">Our Team</Link></li>
-                      <li><Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave} to="/company/women-empowerment">Women Empowerment</Link></li>
-                      <li><Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave} to="/company/life-at-digimark">Life @DigiMark</Link></li>
-                  </ul>
-              </OutsideClickHandler>
-          </li> */}
-          <li className={isActive ? '' : `${styleMenu.menu_active}`}>
-              <OutsideClickHandler
-                  onOutsideClick={() => {
-                      setActive("false");
-                  }}
-              >
-                  <button
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave} className={`${style.menuwrap} ${styleMenu.menuwrap}`} onClick={handleToggle}>
-                      SERVICES <img src="/images/plus.svg" className="ms-2" alt="plus" />
-                  </button>
-                  <ServiceMegaMenu onClick={()=>{setActive("false")}}/>
-              </OutsideClickHandler>
-          </li>
-          <li>
-              <Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave} to="/portfolio">
-                  Portfolio
-              </Link>
-          </li>
-        <li>
-              <Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave} to="/why-quick-growth">
-                  Why Quick Growth
-              </Link>
-          </li>
-          <li>
-          <Link to="/">
-            <img className={style.logo} src="/images/logo.svg" width={100} height={100} alt="logo" />
+            <Link
+              to="/about-us"
+              className="text-white hover:text-yellow-500 py-2 transition-colors duration-300"
+            >
+              About Us
             </Link>
           </li>
+          
+          <li className="relative" ref={menuRef}>
+            <button
+              onClick={toggleServicesMenu}
+              className="flex items-center text-white hover:text-yellow-500 py-2 transition-colors duration-300"
+            >
+              SERVICES
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                className="h-4 w-4 ml-1" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            {servicesMenuOpen && <ServiceMegaMenu onClose={() => setServicesMenuOpen(false)} />}
+          </li>
+          
           <li>
-              <Link
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave} to="/contact-us">
-                  Contact Us
-              </Link>
-          </li> 
-      </ul>
+            <Link
+              to="/portfolio"
+              className="text-white hover:text-yellow-500 py-2 transition-colors duration-300"
+            >
+              Portfolio
+            </Link>
+          </li>
+          
+          <li>
+            <Link
+              to="/why-quick-growth"
+              className="text-white hover:text-yellow-500 py-2 transition-colors duration-300"
+            >
+              Why Quick Growth
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              to="/contact-us"
+              className="text-white hover:text-yellow-500 py-2 transition-colors duration-300"
+            >
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </div>
+      
+      {/* Right side CTA button - only visible on desktop */}
+      <div className="hidden lg:block">
+        <Link 
+          to="/contact-us"
+          className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold rounded-full transition-all duration-300"
+        >
+          Let's talk
+        </Link>
+      </div>
+    </div>
   );
 }

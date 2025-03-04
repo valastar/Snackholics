@@ -10,7 +10,7 @@ function AboutUs() {
   return (
     <React.Fragment>
         <div className="aboutUs">
-            <div className="container">
+            <div className="container bg-red">
                 <div className="content" data-aos="fade-up" data-aos-duration="1000">
                     <p className='hello'>Hello!</p>
                     <p className='want'><span>Want to create a digital product that stands out?</span> We're here to help a team of 100+ experts who design, build, and scale business for top brands and startups. Using the emerging technologies, we create solutions that are not just functional but also visually stunning and user-friendly. Let's work together to bring your vision to life."</p>

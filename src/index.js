@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import 'aos/dist/aos.css';
+// Import Tailwind CSS
+import './assets/css/tailwind.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

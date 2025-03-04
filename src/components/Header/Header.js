@@ -1,39 +1,50 @@
-import { useEffect } from "react";
-import style from "./Header.module.scss";
+import { useEffect, useState } from "react";
 import TopStrip from "./top-strip/TopStrip";
 import MobileNav from "./mobile-nav/MobileNav";
 import Navigation from "./navigation/Navigation";
-import QuickLinks from "./quick-links/QuickLinks";
-function Header() {
-  useEffect(() => {
-    window.addEventListener("scroll", isSticky);
-    return () => {
-      window.removeEventListener("scroll", isSticky);
-    };
-  });
 
-  const isSticky = () => {
-    const header = document.querySelector(".header-section");
-    const scrollTop = window.scrollY;
-    scrollTop >= 80
-      ? header.classList.add(`${style.is_sticky}`)
-      : header.classList.remove(`${style.is_sticky}`);
-  };
+function Header() {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 80) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className={`${style.main_header}`}>
-      <TopStrip/>
-      <div className={`header-section ${style.navigation_wrapper}`}>
-        <div className="container">
-          <div className={`flex-between-center ${style.navigation_content}`}>
-            <Navigation/>
-            <div className={`flex items-center ${style.header_social_wrapper}`}>
-              <QuickLinks/>
-            </div>
+    <header className="w-full">
+      {/* Top strip with contact info and social links */}
+      <TopStrip />
+      
+      {/* Main navigation */}
+      <div 
+        className={`w-full transition-all duration-300 z-50 ${
+          isSticky 
+            ? "fixed top-0 bg-black/90 backdrop-blur-md shadow-lg" 
+            : "relative bg-black"
+        }`}
+      >
+        <div className="container mx-auto px-4">
+          <div className="py-4">
+            <Navigation isSticky={isSticky} />
           </div>
         </div>
       </div>
-      <MobileNav/>
+      
+      {/* Mobile navigation - only visible on smaller screens */}
+      <div className="lg:hidden">
+        <MobileNav />
+      </div>
     </header>
   );
 }
