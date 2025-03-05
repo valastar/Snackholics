@@ -21,6 +21,7 @@ import AiChatbots from "./components/Services/Artificial-Intelligence/AI-Chatbot
 import SaasAiSolution from "./components/Services/Artificial-Intelligence/SaasAi/Index";
 import AiPocAiMvp from "./components/Services/Artificial-Intelligence/Ai-poc-Ai-mvp/Index";
 import Faqs from './components/Faqs/Index';
+import WhyQuickGrowth from "./components/home/WhyQuickGrowth/WhyQuickGrowth";
 
 const Home = lazy(() => import("./components/home/Home"));
 const Config = () => {
@@ -51,6 +52,9 @@ const Config = () => {
           <Route path="/services/artificial-intelligence/ai-chatbots" element={<AiChatbots />} />
           <Route path="/services/artificial-intelligence/saas-ai-solution" element={<SaasAiSolution />} />
           <Route path="/services/artificial-intelligence/ai-poc-ai-mvp" element={<AiPocAiMvp />} />
+          <Route path="/why-quick-growth" element={<WhyQuickGrowth />} />
+         
+
         </Routes>
       </Suspense>
     </Router>
