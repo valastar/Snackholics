@@ -52,9 +52,21 @@ const Config = () => {
           <Route path="/services/artificial-intelligence/ai-chatbots" element={<AiChatbots />} />
           <Route path="/services/artificial-intelligence/saas-ai-solution" element={<SaasAiSolution />} />
           <Route path="/services/artificial-intelligence/ai-poc-ai-mvp" element={<AiPocAiMvp />} />
-          <Route path="/why-quick-growth" element={<WhyQuickGrowth />} />
-         
-
+          <Route path="/services/software/api-integration" element={<AiPocAiMvp />} />
+          <Route path="services/software/saas-solutions" element={<AiPocAiMvp />} />
+          <Route path="services/software/mvp-solutions" element={<AiPocAiMvp />} />
+          <Route path="services/software/maintenance-supply" element={<AiPocAiMvp />} />  
+          <Route path="services/artificial-intelligence/saas-ai" element={<AiPocAiMvp />} />
+          <Route path="services/digital-marketing/ppc" element={<AiPocAiMvp />} />
+          <Route path="services/digital-marketing/reputation" element={<AiPocAiMvp />} />
+          <Route path="services/branding/identity" element={<AiPocAiMvp />} />
+          <Route path="services/branding/logo-design" element={<AiPocAiMvp />} />
+          <Route path="services/branding/printing" element={<AiPocAiMvp />} />
+          <Route path="services/branding/launch" element={<AiPocAiMvp />} />
+          <Route path="services/hosting/domain-registration" element={<AiPocAiMvp />} />
+          <Route path="services/hosting/website" element={<AiPocAiMvp />} />
+          <Route path="services/hosting/email" element={<AiPocAiMvp />} />
+          <Route path="services/hosting/security" element={<AiPocAiMvp />} />
         </Routes>
       </Suspense>
     </Router>
