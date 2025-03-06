@@ -20,7 +20,7 @@ function Home() {
       <Services />
       <OurSkills />
       <OurProcess title="Our Process" description="Our company is guided by a foundation of four core principles" dataList={OurProcessList}/>
-      <WhyQuickGrowth />
+      {/* <WhyQuickGrowth /> */}
       <ClientSays />
       <OurTeams />
       <RequestQuote />
