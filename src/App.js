@@ -4,6 +4,7 @@ import './App.css';
 
 // Import essential components
 import ServicePage from "./components/Services/ServicePage";
+import WhyQuickGrowth from "./components/home/WhyQuickGrowth/WhyQuickGrowth";
 
 // Lazy load other pages
 const Home = lazy(() => import("./components/home/Home"));
@@ -30,6 +31,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/faqs" element={<Faqs />} />
+          <Route path="/why-quick-growth" element={<WhyQuickGrowth />} />
           
           {/* Services - Web */}
           <Route path="/services/web/:servicePath" element={<ServicePage />} />
