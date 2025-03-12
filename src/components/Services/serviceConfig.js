@@ -74,13 +74,13 @@ const serviceConfig = {
     introTitle: 'Expand Your Retail Reach at Scale',
     introTitleSpan: 'High-Performance eCommerce Solutions',
     introDescription: 'From strategy to launch, we craft feature-rich online stores that convert visitors into loyal customers.',
-    introImage: '/images/services/ecommerce-intro.svg',
+    introImage: '/images/services/EcommerceBanner.svg',
     featuresTitle: 'Why Invest in a High-Performance eCommerce Website?',
     featuresTitleSpan: 'Key Benefits',
     featuresDescription: 'We design and develop eCommerce websites optimized for user experience, conversions, and scalability.',
     features: [
         { title: 'Easy to Manage', description: 'Effortless product management and user-friendly dashboards.', icon: '/images/services/product-management.svg' },
-        { title: 'High-Performance & Speed Optimized', description: 'Fast load times and mobile-optimized experiences.', icon: '/images/services/performance.svg' },
+        { title: 'High-Performance & Speed Optimized', description: 'Fast load times and mobile-optimized experiences.', icon: '/images/services/perform-1.svg' },
         { title: 'Fully Customizable Design', description: 'Tailored storefronts that align with your brand and goals.', icon: '/images/services/custom-design.svg' },
         { title: 'Seamless Shopping Experience', description: 'Cross-device compatibility for better customer engagement.', icon: '/images/services/responsive-design.svg' },
         { title: 'Scalable & Secure', description: 'Enterprise-level security and scalability for business growth.', icon: '/images/services/security.svg' }
@@ -154,7 +154,7 @@ const serviceConfig = {
         introTitleSpan: 'Maintenance Services',
         introDescription: 'Regular website maintenance is crucial for ensuring your online presence remains secure, functional, and effective. At Quick Growth Marketing, we provide comprehensive website maintenance services to keep your site running smoothly.',
         introParagraph2: 'Our team of experts handles everything from security updates and performance optimization to content updates and technical support, allowing you to focus on your core business activities without worrying about your website.',
-        introImage: '/images/services/maintenance.svg',
+        introImage: '/images/services/maintainenceBanner.svg',
         featuresTitle: 'Benefits of Our Website',
         featuresTitleSpan: 'Maintenance Services',
         featuresDescription: 'Our maintenance services are designed to provide peace of mind and ensure your website continues to deliver results for your business.',
@@ -179,9 +179,9 @@ const serviceConfig = {
         showcaseTitle: 'Websites We’ve',
         showcaseTitleSpan: 'Maintained',
         showcaseItems: [
-            { title: 'CorporateHub', subtitle: 'Business Portal', image: '/images/services/maintenance1.svg', link: '/portfolio/corporatehub' },
-            { title: 'RetailPlus', subtitle: 'E-commerce Platform', image: '/images/services/maintenance2.svg', link: '/portfolio/retailplus' },
-            { title: 'ServicePro', subtitle: 'Service Provider Website', image: '/images/services/maintenance3.svg', link: '/portfolio/servicepro' }
+            { title: 'CorporateHub', subtitle: 'Business Portal', image: '/images/portfolio/project2.svg', link: '/portfolio/corporatehub' },
+            { title: 'RetailPlus', subtitle: 'E-commerce Platform', image: '/images/portfolio/project3.svg', link: '/portfolio/retailplus' },
+            { title: 'ServicePro', subtitle: 'Service Provider Website', image: '/images/portfolio/project4.svg', link: '/portfolio/servicepro' }
         ],
         showTestimonials: true,
         faqs: [
@@ -208,7 +208,7 @@ const serviceConfig = {
     introTitleSpan: 'Application Development',
     introDescription: 'In today’s fast-paced digital world, your business needs a web app that is secure, scalable, and built to perform. At QuickGrowth, we create custom web apps that deliver exceptional user experiences and drive business success.',
     introParagraph2: 'Our expert team uses cutting-edge technologies to develop web applications tailored to your specific needs, whether you’re looking to create an e-commerce platform, CRM, ERP, or a data-driven web portal.',
-    introImage: '/images/services/webAppIntro.svg',
+    introImage: '/images/services/WebAppDevelopmentBannerPic.svg',
     featuresTitle: 'Features of Our Web',
     featuresTitleSpan: 'Application Development',
     featuresDescription: 'Our web application development services provide you with powerful, scalable, and efficient solutions to help your business thrive.',
@@ -274,19 +274,19 @@ const serviceConfig = {
         {
             title: 'HealthTrack',
             subtitle: 'Healthcare Portal',
-            image: '/images/services/healthtrack.svg',
+            image: '/images/portfolio/project6.svg',
             link: '/portfolio/healthtrack'
         },
         {
             title: 'RetailMaster',
             subtitle: 'E-commerce Platform',
-            image: '/images/services/retailmaster.svg',
+            image: '/images/portfolio/project4.svg',
             link: '/portfolio/retailmaster'
         },
         {
             title: 'ProjectHub',
             subtitle: 'Project Management Tool',
-            image: '/images/services/projecthub.svg',
+            image: '/images/portfolio/project5.svg',
             link: '/portfolio/projecthub'
         }
     ],
@@ -324,16 +324,16 @@ const serviceConfig = {
     introTitle: 'Take Your Online Presence to the Next Level',
     introTitleSpan: 'Professional Web Design & Development',
     introDescription: 'QuickGrowth specializes in crafting user-friendly, SEO-optimized, and visually stunning websites that enhance your brand and drive conversions.',
-    introImage: '/images/services/web-design-intro.svg',
+    introImage: '/images/services/webdesign.svg',
     featuresTitle: 'Why Choose QuickGrowth for Web Design & Development?',
     featuresTitleSpan: 'What Sets Us Apart?',
     featuresDescription: 'Our expert team ensures your website is fast, secure, responsive, and built for success.',
     features: [
-        { title: 'Custom Website Solutions', description: 'No templates—tailored designs that match your brand identity.', icon: '/images/services/custom-design.svg' },
-        { title: 'SEO & Performance Optimized', description: 'Higher rankings, faster load speeds, and increased conversions.', icon: '/images/services/seo-optimization.svg' },
-        { title: 'Mobile-Friendly & Responsive', description: 'Seamless user experience across all devices.', icon: '/images/services/responsive-design.svg' },
-        { title: 'User-Centric Design', description: 'Engaging and intuitive designs that boost user interaction.', icon: '/images/services/user-experience.svg' },
-        { title: 'Scalable & Future-Proof', description: 'Built to grow with your business using the latest technologies.', icon: '/images/services/scalable-design.svg' }
+        { title: 'Custom Website Solutions', description: 'No templates—tailored designs that match your brand identity.', icon: '/images/services/Benefit-4.svg' },
+        { title: 'SEO & Performance Optimized', description: 'Higher rankings, faster load speeds, and increased conversions.', icon: '/images/services/seo-1.svg' },
+        { title: 'Mobile-Friendly & Responsive', description: 'Seamless user experience across all devices.', icon: '/images/services/Benefit-3.svg' },
+        { title: 'User-Centric Design', description: 'Engaging and intuitive designs that boost user interaction.', icon: '/images/services/Benefit-6.svg' },
+        { title: 'Scalable & Future-Proof', description: 'Built to grow with your business using the latest technologies.', icon: '/images/services/Benefit-5.svg' }
     ],
     servicesTitle: 'Our Website Design & Development Process',
     servicesDescription: 'We follow a structured approach to ensure your website is functional, attractive, and optimized for success.',
@@ -405,7 +405,7 @@ const serviceConfig = {
     introTitleSpan: 'Validate, Build & Scale with Confidence',
     introDescription: 'At QuickGrowth, we help businesses validate AI solutions through Proof of Concept (PoC) and MVP development. Our approach minimizes risks and ensures your AI solution is both feasible and impactful before full-scale deployment.',
     introParagraph2: 'We guide you from ideation to prototype, focusing on maximizing business results with robust AI models and innovative designs.',
-    introImage: '/images/services/ai-poc-mvp-intro.svg',
+    introImage: '/images/services/aipocmvpbanner.svg',
     featuresTitle: 'Why Choose QuickGrowth for AI PoC & MVP Development?',
     featuresTitleSpan: 'Here’s Why',
     featuresDescription: 'QuickGrowth specializes in delivering high-quality AI models and solutions that empower businesses to realize their AI potential. Our PoC & MVP offerings include technical validation, prototype development, and business impact assessments.',
@@ -596,7 +596,7 @@ const serviceConfig = {
     introTitleSpan: 'SEO Solutions for Better Visibility & Growth',
     introDescription: 'QuickGrowth’s SEO services help businesses get noticed on search engines like Google and Bing. We focus on optimizing websites to drive organic traffic, increase conversions, and enhance brand visibility in competitive markets.',
     introParagraph2: 'Our expert team uses data-driven strategies to improve your search rankings and generate measurable growth.',
-    introImage: '/images/services/seo-intro.svg',
+    introImage: '/images/services/seo-banner.svg',
     featuresTitle: 'Why Choose QuickGrowth for SEO?',
     featuresTitleSpan: 'Here’s Why',
     featuresDescription: 'QuickGrowth offers comprehensive SEO services to ensure your business stands out in the search results. We use proven strategies that maximize your ROI and deliver consistent results.',
@@ -739,7 +739,7 @@ const serviceConfig = {
     introTitleSpan: 'Social Media Strategies for Real Growth',
     introDescription: 'QuickGrowth’s Social Media Marketing services are designed to increase your brand’s visibility, engagement, and conversions. We create data-driven strategies to help you reach your target audience and grow your online presence.',
     introParagraph2: 'Our team leverages social media platforms to craft custom strategies, generate leads, and drive measurable results for your business.',
-    introImage: '/images/services/smm-intro.svg',
+    introImage: '/images/services/smm-banner.svg',
     featuresTitle: 'Why Social Media Marketing Matters',
     featuresTitleSpan: 'Here’s Why',
     featuresDescription: 'Social media marketing is essential to driving organic growth, boosting brand recognition, and engaging your audience. Here’s why it’s important for your business.',
@@ -870,7 +870,7 @@ const serviceConfig = {
     introTitleSpan: 'Drive Instant Results with Data-Driven PPC Strategies',
     introDescription: 'QuickGrowth specializes in Google Ads & PPC marketing that drive measurable traffic, generate leads, and boost ROI. Our expert team designs PPC campaigns that work for your business, delivering fast results and high returns on ad spend.',
     introParagraph2: 'We manage campaigns across all Google Ads formats to ensure your business reaches the right customers at the right time, maximizing your ROI.',
-    introImage: '/images/services/pcc-intro.svg',
+    introImage: '/images/services/how-to-market.svg',
     featuresTitle: 'Why Invest in Google Ads & PPC Marketing?',
     featuresTitleSpan: 'Here’s Why',
     featuresDescription: 'Google Ads & PPC marketing provide fast, measurable, and highly targeted advertising that delivers instant results and more conversions.',
@@ -1003,7 +1003,7 @@ const serviceConfig = {
     introTitleSpan: 'Protect, Repair & Enhance Your Brand Image',
     introDescription: 'QuickGrowth specializes in Online Reputation Management services that protect your brand, mitigate negative content, and enhance your online presence. Our expert ORM team works strategically to repair and promote your brand’s reputation, ensuring positive online interactions.',
     introParagraph2: 'With our ORM services, you can control your online narrative and build lasting trust with your audience.',
-    introImage: '/images/services/orm-intro.svg',
+    introImage: '/images/services/hoistingbanner.svg',
     featuresTitle: 'Why Online Reputation Management is Essential',
     featuresTitleSpan: 'Here’s Why ORM Matters',
     featuresDescription: 'ORM helps protect your business from online threats and ensure your brand maintains a positive image.',
@@ -1144,7 +1144,7 @@ const serviceConfig = {
     introTitleSpan: 'Development Excellence',
     introDescription: 'At QuickGrowth, we specialize in custom mobile application development using cutting-edge technologies and frameworks. Our expertise spans iOS, Android, and cross-platform solutions, ensuring seamless performance, security, and scalability.',
     introParagraph2: 'Whether you’re looking to build a native iOS app, an Android app, or a cross-platform solution, we use the latest tools to ensure your app is fast, secure, and built to scale.',
-    introImage: '/images/services/mobileAppIntro.svg',
+    introImage: '/images/services/mobileApp-bg.svg',
     featuresTitle: 'Our Mobile App',
     featuresTitleSpan: 'Development Features',
     featuresDescription: 'We leverage the best technologies to create high-performing mobile applications tailored to your business needs.',
@@ -1214,19 +1214,19 @@ const serviceConfig = {
         {
             title: 'True Cloud Storage App',
             subtitle: 'Cross-Platform Storage Solution',
-            image: '/images/services/cloudStorageApp.svg',
+            image: '/images/portfolio/port-1.svg',
             link: '/case-studies/true-cloud-storage'
         },
         {
             title: 'Airbnb-Style App',
             subtitle: 'Property Listing & Booking',
-            image: '/images/services/airbnbApp.svg',
+            image: '/images/portfolio/port-3.svg',
             link: '/case-studies/airbnb-style-app'
         },
         {
             title: 'Graphic Design App',
             subtitle: 'Platform for Digital Creators',
-            image: '/images/services/designApp.svg',
+            image: '/images/portfolio/port-2.svg',
             link: '/case-studies/graphic-design-app'
         }
     ],
@@ -1269,7 +1269,7 @@ const serviceConfig = {
     introTitleSpan: 'For Business Efficiency',
     introDescription: 'At QuickGrowth, we specialize in seamless API system integration to connect your applications, platforms, and third-party services. Our solutions help optimize workflows, automate processes, and enhance user experiences—saving you time and reducing errors.',
     introParagraph2: 'Whether you need third-party API integration, custom API development, or cloud API integration, our experts provide the best solution for your business.',
-    introImage: '/images/services/apiIntegrationIntro.svg',
+    introImage: '/images/services/awesome-1.svg',
     featuresTitle: 'Our API Integration',
     featuresTitleSpan: 'Services',
     featuresDescription: 'We offer a wide range of API integration services to help you automate workflows and enhance connectivity.',
@@ -1335,19 +1335,19 @@ const serviceConfig = {
         {
             title: 'Payment API Integration for Subscription Platform',
             subtitle: 'Seamless Recurring Payments',
-            image: '/images/services/paymentApiProject.svg',
+            image: '/images/portfolio/port-5.svg',
             link: '/case-studies/payment-api-integration'
         },
         {
             title: 'Twilio API for Customer Support Chatbots',
             subtitle: 'AI Chatbot with Real-Time SMS & Voice Support',
-            image: '/images/services/twilioApiProject.svg',
+            image: '/images/portfolio/port-6.svg',
             link: '/case-studies/twilio-api-chatbots'
         },
         {
             title: 'Google Analytics API for BI Dashboard',
             subtitle: 'Real-Time Data Insights',
-            image: '/images/services/googleAnalyticsProject.svg',
+            image: '/images/portfolio/port-7.svg',
             link: '/case-studies/google-analytics-api'
         }
     ],
@@ -1390,7 +1390,7 @@ const serviceConfig = {
     introTitleSpan: 'For Your Business Growth',
     introDescription: 'At QuickGrowth, we specialize in building custom SaaS platforms designed to scale with your business. Our cloud-based solutions offer flexibility, security, and performance while meeting Canadian data protection regulations.',
     introParagraph2: 'Our SaaS solutions provide everything from MVP development to full-fledged platforms. We help businesses migrate to the cloud and create secure, user-centric applications that deliver outstanding experiences.',
-    introImage: '/images/services/saasIntro.svg',
+    introImage: '/images/services/saasSolBanner.svg',
     featuresTitle: 'Our SaaS Development',
     featuresTitleSpan: 'Services',
     featuresDescription: 'We offer comprehensive SaaS development services to help you build, scale, and optimize your SaaS platforms.',
@@ -1456,19 +1456,19 @@ const serviceConfig = {
         {
             title: 'Cloud-Based Storage SaaS Solution',
             subtitle: 'Secure File Management Platform',
-            image: '/images/services/cloud-storage-saas.svg',
+            image: '/images/services/awesome-3.svg',
             link: '/case-studies/cloud-storage-saas'
         },
         {
             title: 'SaaS Business Analytics Dashboard',
             subtitle: 'Real-Time Data Analysis with AI',
-            image: '/images/services/saas-analytics-dashboard.svg',
+            image: '/images/services/awesome-4.svg',
             link: '/case-studies/saas-business-analytics'
         },
         {
             title: 'Healthcare SaaS for Telemedicine',
             subtitle: 'HIPAA-Compliant Patient Communication Platform',
-            image: '/images/services/saas-healthcare-telemedicine.svg',
+            image: '/images/services/awesome-5.svg',
             link: '/case-studies/saas-healthcare-telemedicine'
         }
     ],
@@ -1511,7 +1511,7 @@ const serviceConfig = {
     introTitleSpan: 'With MVP Development',
     introDescription: 'A Minimum Viable Product (MVP) is the first step to building a successful product. It helps you validate your idea, gather user feedback, and scale efficiently. At QuickGrowth, we offer a comprehensive, cost-effective approach to MVP development, helping startups in Canada launch quickly and successfully.',
     introParagraph2: 'Our MVP services ensure that your product resonates with early users, attracts investors, and accelerates your market entry, while avoiding costly mistakes and focusing on what truly matters.',
-    introImage: '/images/services/mvpIntro.svg',
+    introImage: '/images/services/mvp-Banner.svg',
     featuresTitle: 'MVP Development Services',
     featuresTitleSpan: 'We Offer',
     featuresDescription: 'From building a functional MVP to refining it based on feedback, our services cover everything you need to turn your idea into a market-ready product.',
@@ -1577,19 +1577,19 @@ const serviceConfig = {
         {
             title: 'AI-Powered E-Commerce MVP',
             subtitle: 'Smart E-Commerce Platform with AI Recommendations',
-            image: '/images/services/ai-powered-ecommerce-mvp.svg',
+            image: '/images/services/awesome-6.svg',
             link: '/case-studies/ai-powered-ecommerce-mvp'
         },
         {
             title: 'Healthcare SaaS MVP',
             subtitle: 'HIPAA-Compliant Telemedicine Platform',
-            image: '/images/services/healthcare-saas-mvp.svg',
+            image: '/images/services/awesome1.svg',
             link: '/case-studies/healthcare-saas-mvp'
         },
         {
             title: 'Social Media MVP for Influencers',
             subtitle: 'Cross-Platform Social Networking App',
-            image: '/images/services/social-media-mvp.svg',
+            image: '/images/services/awesome2.svg',
             link: '/case-studies/social-media-mvp'
         }
     ],
@@ -1632,7 +1632,7 @@ const serviceConfig = {
     introTitleSpan: 'With Maintenance & Support Services',
     introDescription: 'Your software is a critical asset. Keeping it updated, secure, and optimized is essential for smooth operations. At QuickGrowth, we offer a full suite of software maintenance services, from bug fixes to performance optimization, ensuring your software runs flawlessly.',
     introParagraph2: 'With our maintenance services, you can focus on your business while we handle all the technical details of keeping your software up-to-date and secure.',
-    introImage: '/images/services/maintenanceIntro.svg',
+    introImage: '/images/services/maintainencebanner.svg',
     featuresTitle: 'Our Software Maintenance Services',
     featuresTitleSpan: 'We Provide',
     featuresDescription: 'Our services are designed to ensure long-term stability, security, and optimal performance for your software. From bug fixing to performance optimization, we’ve got you covered.',
@@ -1749,19 +1749,19 @@ const serviceConfig = {
         {
             title: 'Banking & Fintech System Maintenance',
             subtitle: 'Security & Fraud Detection Monitoring',
-            image: '/images/services/banking-fintech-maintenance.svg',
+            image: '/images/services/awesome1.svg',
             link: '/case-studies/banking-fintech-maintenance'
         },
         {
             title: 'E-Commerce Software Optimization',
             subtitle: 'Enhanced Checkout & Cart Performance',
-            image: '/images/services/ecommerce-software-optimization.svg',
+            image: '/images/services/awesome3.svg',
             link: '/case-studies/ecommerce-software-optimization'
         },
         {
             title: 'Mobile App Bug Fixing & Updates',
             subtitle: 'UI/UX Updates & Speed Improvements',
-            image: '/images/services/mobile-app-maintenance.svg',
+            image: '/images/services/awesome2.svg',
             link: '/case-studies/mobile-app-maintenance'
         }
     ],
@@ -1801,7 +1801,7 @@ const serviceConfig = {
     introTitleSpan: '24/7 Personalized Support & Automation',
     introDescription: 'Automate repetitive tasks, improve customer service, and gather valuable insights with AI-powered chatbots. QuickGrowth’s custom chatbots deliver fast, reliable responses, optimizing customer experiences and operations.',
     introParagraph2: 'Whether it’s providing 24/7 support, booking appointments, or handling customer queries, our chatbots integrate seamlessly into your business operations.',
-    introImage: '/images/services/aiChatboxIntro.svg',
+    introImage: '/images/services/chatbot-banner.svg',
     featuresTitle: 'Why Choose QuickGrowth for AI Chatbot Development?',
     featuresTitleSpan: 'Here’s Why',
     featuresDescription: 'Our chatbots provide cost savings, scalability, enhanced user engagement, and data-driven insights to help you scale your business efficiently.',
@@ -1957,7 +1957,7 @@ const serviceConfig = {
     introTitleSpan: 'For Your Business Growth',
     introDescription: 'At QuickGrowth, we specialize in building custom SaaS platforms designed to scale with your business. Our cloud-based solutions offer flexibility, security, and performance while meeting Canadian data protection regulations.',
     introParagraph2: 'Our SaaS solutions provide everything from MVP development to full-fledged platforms. We help businesses migrate to the cloud and create secure, user-centric applications that deliver outstanding experiences.',
-    introImage: '/images/services/saasIntro.svg',
+    introImage: '/images/services/saasaibanner.svg',
     featuresTitle: 'Our SaaS Development',
     featuresTitleSpan: 'Services',
     featuresDescription: 'We offer comprehensive SaaS development services to help you build, scale, and optimize your SaaS platforms.',
@@ -2017,28 +2017,7 @@ const serviceConfig = {
             description: 'We deploy your SaaS platform to cloud-based servers, analyze user feedback, and optimize it for continuous improvement.'
         }
     ],
-    showcaseTitle: 'Recent SaaS Projects',
-    showcaseTitleSpan: 'Solutions',
-    showcaseItems: [
-        {
-            title: 'Cloud-Based Storage SaaS Solution',
-            subtitle: 'Secure File Management Platform',
-            image: '/images/services/cloud-storage-saas.svg',
-            link: '/case-studies/cloud-storage-saas'
-        },
-        {
-            title: 'SaaS Business Analytics Dashboard',
-            subtitle: 'Real-Time Data Analysis with AI',
-            image: '/images/services/saas-analytics-dashboard.svg',
-            link: '/case-studies/saas-business-analytics'
-        },
-        {
-            title: 'Healthcare SaaS for Telemedicine',
-            subtitle: 'HIPAA-Compliant Patient Communication Platform',
-            image: '/images/services/saas-healthcare-telemedicine.svg',
-            link: '/case-studies/saas-healthcare-telemedicine'
-        }
-    ],
+    
     showTestimonials: true,
     faqs: [
         {
@@ -2079,7 +2058,7 @@ const serviceConfig = {
     introTitleSpan: 'Validate, Build & Scale with Confidence',
     introDescription: 'At QuickGrowth, we help businesses validate AI solutions through Proof of Concept (PoC) and MVP development. Our approach minimizes risks and ensures your AI solution is both feasible and impactful before full-scale deployment.',
     introParagraph2: 'We guide you from ideation to prototype, focusing on maximizing business results with robust AI models and innovative designs.',
-    introImage: '/images/services/ai-poc-mvp-intro.svg',
+    introImage: '/images/services/aipocmvpbanner.svg',
     featuresTitle: 'Why Choose QuickGrowth for AI PoC & MVP Development?',
     featuresTitleSpan: 'Here’s Why',
     featuresDescription: 'QuickGrowth specializes in delivering high-quality AI models and solutions that empower businesses to realize their AI potential. Our PoC & MVP offerings include technical validation, prototype development, and business impact assessments.',
@@ -2399,7 +2378,7 @@ const serviceConfig = {
         introTitle: 'Powerful Copy That Engages and Converts',
         introTitleSpan: 'Professional Copywriting Services',
         introDescription: 'QuickGrowth specializes in crafting compelling, SEO-optimized, and audience-centered content that drives real business results.',
-        introImage: '/images/services/copywriting-intro.svg',
+        introImage: '/images/services/copywritevideo.svg',
         featuresTitle: 'Why Choose QuickGrowth for Copywriting?',
         featuresTitleSpan: 'Expert Copy That Works',
         featuresDescription: 'Our expert writers ensure your content is engaging, persuasive, and tailored for conversions.',
