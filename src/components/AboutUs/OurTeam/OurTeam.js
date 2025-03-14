@@ -32,9 +32,9 @@ function OurTeam() {
                   <span>Co-Founder</span>
                 </div>
                 <div className="social">
-                        <Link to=""><img src="/images/aboutUs/social1.svg" alt="socialIcon" /></Link>
+                        {/* <Link to=""><img src="/images/aboutUs/social1.svg" alt="socialIcon" /></Link>
                         <Link to=""><img src="/images/aboutUs/social2.svg" alt="socialIcon" /></Link>
-                        <Link to=""><img src="/images/aboutUs/social4.svg" alt="socialIcon" /></Link>
+                        <Link to=""><img src="/images/aboutUs/social4.svg" alt="socialIcon" /></Link> */}
                         <Link to="https://www.linkedin.com/in/codyleggebba/?"><img src="/images/aboutUs/social5.svg" alt="socialIcon" /></Link>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ function OurTeam() {
               data-aos-duration="1000">
               <div className="mainBlock">
               <div className="wrapImg">
-                <img src="/images/aboutUs/team3.svg" alt="a1" />
+                <img src="/images/our-team-2.jpeg" alt="a1" />
                 <div className="description">
                   <h3>Kri Hynes</h3>
                   <p>A Co-Founder is someone who helps establish a company from the ground up, often sharing the vision and responsibilities of the business with one or more other individuals. Co-Founders bring unique skills and expertise to the table, which can complement each other and drive the company forward.</p>
@@ -56,9 +56,9 @@ function OurTeam() {
                   <span>C.O.O., SVP Instructor Led Training</span>
                 </div>
                 <div className="social">
-                        <Link to=""><img src="/images/aboutUs/social1.svg" alt="socialIcon" /></Link>
+                        {/* <Link to=""><img src="/images/aboutUs/social1.svg" alt="socialIcon" /></Link>
                         <Link to=""><img src="/images/aboutUs/social2.svg" alt="socialIcon" /></Link>
-                        <Link to=""><img src="/images/aboutUs/social4.svg" alt="socialIcon" /></Link>
+                        <Link to=""><img src="/images/aboutUs/social4.svg" alt="socialIcon" /></Link> */}
                         <Link to="https://www.linkedin.com/in/keri-hynes-37875b101/"><img src="/images/aboutUs/social5.svg" alt="socialIcon" /></Link>
                     </div>
                 </div>
