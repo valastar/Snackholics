@@ -1,17 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 function Footer() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      easing: 'ease-in-out'
-    });
-  }, []);
-
   const [email, setEmail] = useState('');
   const [subscribeStatus, setSubscribeStatus] = useState('');
 
@@ -39,9 +29,9 @@ function Footer() {
     <footer className="bg-black text-white pt-16 pb-4">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Company Info Column */}
-          <div data-aos="fade-right" data-aos-duration="1000">
+          <div>
             <div className="mb-6 flex justify-center md:justify-start">
               <img src="/images/logo.svg" alt="QuickGrowth" className="h-16" />
             </div>
@@ -80,7 +70,7 @@ function Footer() {
           </div>
 
           {/* Company Links Column */}
-          <div data-aos="fade-up" data-aos-duration="1000">
+          <div>
             <h3 className="text-yellow-500 font-bold text-xl mb-6 uppercase">COMPANY</h3>
             <ul className="space-y-3">
               <li><Link to="/about-us" className="text-gray-400 hover:text-white transition-colors">ABOUT US</Link></li>
@@ -91,7 +81,7 @@ function Footer() {
           </div>
 
           {/* Services Links Column */}
-          <div data-aos="fade-up" data-aos-duration="1000">
+          <div>
             <h3 className="text-yellow-500 font-bold text-xl mb-6 uppercase">SERVICES</h3>
             <ul className="space-y-3">
               <li><Link to="/services/artificial-intelligence" className="text-gray-400 hover:text-white transition-colors">ARTIFICIAL INTELLIGENCE</Link></li>
@@ -103,7 +93,7 @@ function Footer() {
           </div>
 
           {/* Newsletter Subscription Column */}
-          <div data-aos="fade-left" data-aos-duration="1000">
+          <div>
             <h3 className="text-yellow-500 font-bold text-xl mb-6 uppercase">JOIN OUR NEWSLETTER</h3>
             <p className="text-gray-400 mb-4">
               We will send you weekly updates for better product management.
