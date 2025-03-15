@@ -19,7 +19,7 @@ function LatestProject() {
     {
       title: 'Pilsia',
       image: '/images/portfolio/pulsia.jpeg',
-      category: 'Artificial Intelligence',
+      category: 'Artificial Intelligencegit ',
     },
     {
       title: 'Regalbot',
