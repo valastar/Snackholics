@@ -10,20 +10,29 @@ import Faqs from './Faqs/Faqs'
 import WorkWithUs from './WorkWithUs/WorkWithUs'
 import Technologies from './Technologies/Technologies'
 import MakeDifferenceList from './MakeDifferent/MakeDifferenceList.json'
+
 function Portfolio() {
   return (
-    <React.Fragment>
-        <Header />
-        <PortfolioBanner />
-        <MakeDifferent classProps="makeDifferent" title={["What Makes us ",<span>Different</span>]} dataList={MakeDifferenceList} />
+    <div className="bg-black text-white min-h-screen">
+      <Header />
+      <PortfolioBanner />
+      <div className="container mx-auto px-4">
+        <MakeDifferent 
+          classProps="makeDifferent" 
+          title={["What Makes us ", <span className="text-yellow-500">Different</span>]} 
+          dataList={MakeDifferenceList} 
+        />
         <Achievements />
-        <LatestProject />
-        <ChooseUs />
-        <Technologies />
+      </div>
+      <LatestProject />
+      <ChooseUs />
+      <Technologies />
+      <div className="container mx-auto px-4">
         <Faqs />
         <WorkWithUs />
-        <Footer/>
-    </React.Fragment>
+      </div>
+      <Footer/>
+    </div>
   )
 }
 
