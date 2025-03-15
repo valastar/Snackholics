@@ -8,12 +8,12 @@ function LatestProject() {
   const projects = [
     {
       title: 'Charism',
-      image: '/images/portfolio/charism.jpeg',
-      category: 'Artificial Intelligence',
+      image: '/images/portfolio/Charism.jpeg',
+      category: 'Branding',
     },
     {
-      title: 'Web Portfolio Mockup',
-      image: '/images/portfolio/port-2.svg',
+      title: 'Nexus',
+      image: '/images/portfolio/nexus.jpeg',
       category: 'Web',
     },
     {
@@ -28,17 +28,17 @@ function LatestProject() {
     },
     {
       title: 'Prospective Solutions',
-      image: '/images/portfolio/prospectivesol.jpeg',
+      image: '/images/portfolio/prospectivesols.jpeg',
       category: 'Branding',
     },
     {
       title: 'Intelliaire',
-      image: '/images/portfolio/intelliare.jpeg',
+      image: '/images/portfolio/intelliaire.jpeg',
       category: 'Hosting',
     },
     {
-      title: 'Sprouce Cloud',
-      image: '/images/portfolio/port-7.svg',
+      title: 'RoboFRND',
+      image: '/images/portfolio/roboFRND.jpeg',
       category: 'Software',
     },
     {
@@ -48,17 +48,44 @@ function LatestProject() {
     },
     {
       title: 'VI Cross',
-      image: '/images/portfolio/vicross.svg',
+      image: '/images/portfolio/vicross.jpeg',
       category: 'Branding',
     },
     {
       title: 'Follow me',
-      image: '/images/portfolio/followmeportals.svg',
+      image: '/images/portfolio/followmeportals.jpeg',
       category: 'Hosting',
-    }
-  ];
+    },
+    {
+      title: 'Mega Pro Events',
+      image: '/images/portfolio/megaproevents.jpeg',
+      category: 'Digital Marketing',
+    },
+    {
+      title: 'Smart CFO',
+      image: '/images/portfolio/smartcfo.jpeg',
+      category: 'Software',
+    },
+    {
+      title: 'Uni Travel',
+      image: '/images/portfolio/unitravel.jpeg',
+      category: 'Branding',
+    },
+    {
+      title: 'VR-VSS',
+      image: '/images/portfolio/vr-vss.jpeg',
+      category: 'Software',
+    },
+    {
+      title: 'Yunshun',
+      image: '/images/portfolio/yunshun.jpeg',
+      category: 'Web',
+    },
 
-  // Filter the projects based on the active tab
+  ];
+  
+
+  // Filter the projects based on checthe active tab
   const filteredProjects = activeTab === 'All' 
     ? projects 
     : projects.filter(project => project.category === activeTab);
