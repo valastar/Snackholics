@@ -8,18 +8,18 @@ function LatestProject() {
   const projects = [
     {
       title: 'Charism',
-      image: '/images/portfolio/Charism.jpeg',
-      category: 'Branding',
+      image: '/images/portfolio/charism.jpeg',
+      category: 'Artificial Intelligence',
     },
     {
-      title: 'Nexus',
-      image: '/images/portfolio/nexus.jpeg',
+      title: 'Web Portfolio Mockup',
+      image: '/images/portfolio/port-2.svg',
       category: 'Web',
     },
     {
       title: 'Pilsia',
       image: '/images/portfolio/pulsia.jpeg',
-      category: 'Artificial Intelligencegit ',
+      category: 'Artificial Intelligence',
     },
     {
       title: 'Regalbot',
@@ -28,17 +28,17 @@ function LatestProject() {
     },
     {
       title: 'Prospective Solutions',
-      image: '/images/portfolio/prospectivesols.jpeg',
+      image: '/images/portfolio/prospectivesol.jpeg',
       category: 'Branding',
     },
     {
       title: 'Intelliaire',
-      image: '/images/portfolio/intelliaire.jpeg',
+      image: '/images/portfolio/intelliare.jpeg',
       category: 'Hosting',
     },
     {
-      title: 'RoboFRND',
-      image: '/images/portfolio/roboFRND.jpeg',
+      title: 'Sprouce Cloud',
+      image: '/images/portfolio/port-7.svg',
       category: 'Software',
     },
     {
@@ -48,44 +48,17 @@ function LatestProject() {
     },
     {
       title: 'VI Cross',
-      image: '/images/portfolio/vicross.jpeg',
+      image: '/images/portfolio/vicross.svg',
       category: 'Branding',
     },
     {
       title: 'Follow me',
-      image: '/images/portfolio/followmeportals.jpeg',
+      image: '/images/portfolio/followmeportals.svg',
       category: 'Hosting',
-    },
-    {
-      title: 'Mega Pro Events',
-      image: '/images/portfolio/megaproevents.jpeg',
-      category: 'Digital Marketing',
-    },
-    {
-      title: 'Smart CFO',
-      image: '/images/portfolio/smartcfo.jpeg',
-      category: 'Software',
-    },
-    {
-      title: 'Uni Travel',
-      image: '/images/portfolio/unitravel.jpeg',
-      category: 'Branding',
-    },
-    {
-      title: 'VR-VSS',
-      image: '/images/portfolio/vr-vss.jpeg',
-      category: 'Software',
-    },
-    {
-      title: 'Yunshun',
-      image: '/images/portfolio/yunshun.jpeg',
-      category: 'Web',
-    },
-
+    }
   ];
-  
 
-  // Filter the projects based on checthe active tab
+  // Filter the projects based on the active tab
   const filteredProjects = activeTab === 'All' 
     ? projects 
     : projects.filter(project => project.category === activeTab);
