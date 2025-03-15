@@ -8,7 +8,7 @@ function LatestProject() {
   const projects = [
     {
       title: 'Charism',
-      image: '/images/portfolio/port-1.svg',
+      image: '/images/portfolio/charism.jpeg',
       category: 'Artificial Intelligence',
     },
     {
@@ -18,22 +18,22 @@ function LatestProject() {
     },
     {
       title: 'Pilsia',
-      image: '/images/portfolio/port-4.svg',
+      image: '/images/portfolio/pulsia.jpeg',
       category: 'Artificial Intelligence',
     },
     {
       title: 'Regalbot',
-      image: '/images/portfolio/port-3.svg',
+      image: '/images/portfolio/regalbot.jpeg',
       category: 'Digital Marketing',
     },
     {
       title: 'Prospective Solutions',
-      image: '/images/portfolio/port-5.svg',
+      image: '/images/portfolio/prospectivesol.jpeg',
       category: 'Branding',
     },
     {
       title: 'Intelliaire',
-      image: '/images/portfolio/port-6.svg',
+      image: '/images/portfolio/intelliare.jpeg',
       category: 'Hosting',
     },
     {
@@ -43,17 +43,17 @@ function LatestProject() {
     },
     {
       title: 'Facility Trax',
-      image: '/images/portfolio/port-8.svg',
+      image: '/images/portfolio/facilitytrax.jpeg',
       category: 'Digital Marketing',
     },
     {
       title: 'VI Cross',
-      image: '/images/portfolio/port-9.svg',
+      image: '/images/portfolio/vicross.svg',
       category: 'Branding',
     },
     {
       title: 'Follow me',
-      image: '/images/portfolio/port-10.svg',
+      image: '/images/portfolio/followmeportals.svg',
       category: 'Hosting',
     }
   ];
