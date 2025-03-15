@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Header/Header'
 import AboutBanner from './AboutBanner/AboutBanner'
-import Achievments from './Achievements/Achievements'
+import Achievements from './Achievements/Achievements'
 import OurTeam from './OurTeam/OurTeam'
 import Journey from './Journey/Journey'
 import Footer from '../Footer/Footer'
@@ -10,16 +10,20 @@ import OurServices from './OurServices/OurServices'
 
 function About() {
   return (
-    <React.Fragment>
-        <Header/>
-        <AboutBanner />
-        <Achievments/>
+    <div className="bg-black text-white min-h-screen">
+      <Header/>
+      <AboutBanner />
+      <div className="container mx-auto px-4">
+        <Achievements/>
         <CoreValues />
-        <OurServices />
+      </div>
+      <OurServices />
+      <div className="container mx-auto px-4">
         <OurTeam />
         <Journey />
-        <Footer/>
-    </React.Fragment>
+      </div>
+      <Footer/>
+    </div>
   )
 }
 
