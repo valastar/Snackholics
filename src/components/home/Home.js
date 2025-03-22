@@ -5,7 +5,7 @@ import Banner from './Banner/Banner'
 import AboutUs from './AboutUs/AboutUs'
 import Services from './Services/Services'
 import OurSkills from './OurSkills/OurSkills'
-import WhyQuickGrowth from './WhyQuickGrowth/WhyQuickGrowth'
+import WhyQuickGrowthSection from './WhyQuickGrowth/WhyQuickGrowthSection'
 import RequestQuote from './RequestQuote/RequestQuote'
 import OurProcess from './OurProcess/OurProcess'
 import ClientSays from './ClientSays/ClientSays'
@@ -20,7 +20,7 @@ function Home() {
       <Services />
       <OurSkills />
       <OurProcess title="Our Process" description="Our company is guided by a foundation of four core principles" dataList={OurProcessList}/>
-      <WhyQuickGrowth />
+      <WhyQuickGrowthSection />
       <ClientSays />
       <OurTeams />
       <RequestQuote />
