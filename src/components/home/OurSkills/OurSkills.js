@@ -12,8 +12,7 @@ const skillCategories = [
       </svg>
     ),
     skills: [
-      'Innovation',
-      'Digital Transformation',
+      'Innovation & Digital Transformation',
       'Business Process Reengineering',
       'Customer Experience Management',
       'Project Management'
@@ -27,11 +26,9 @@ const skillCategories = [
       </svg>
     ),
     skills: [
-      'Design Sprint',
-      'UI/UX Design',
-      'Experience Design',
-      'Creative Production',
-      'Illustration and Motion'
+      'UI/UX & Experience Design',
+      'Creative Production & Motion Graphics',
+      'Design Sprints'
     ]
   },
   {
@@ -42,11 +39,10 @@ const skillCategories = [
       </svg>
     ),
     skills: [
-      'Web and Mobile Apps',
-      'e-Commerce',
-      'Custom Software Development',
-      'Digital Marketing',
-      'Artificial Intelligence'
+      'Web & Mobile App Development',
+      'eCommerce Solutions',
+      'AI & Automation',
+      'Software Development'
     ]
   },
   {
@@ -57,11 +53,9 @@ const skillCategories = [
       </svg>
     ),
     skills: [
-      'User Acquisition Strategy',
-      'Analytics and Optimization',
+      'User Acquisition & Optimization',
       'Workflow Automation',
-      'New Features Definition',
-      'Tracking KPIs'
+      'KPI Tracking & Performance Analysis'
     ]
   }
 ];

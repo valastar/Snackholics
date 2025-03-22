@@ -84,11 +84,10 @@ function Footer() {
           <div>
             <h3 className="text-yellow-500 font-bold text-xl mb-6 uppercase">SERVICES</h3>
             <ul className="space-y-3">
-              <li><Link to="/services/artificial-intelligence" className="text-gray-400 hover:text-white transition-colors">ARTIFICIAL INTELLIGENCE</Link></li>
-              <li><Link to="/services/web/website-design-development" className="text-gray-400 hover:text-white transition-colors">WEB DEVELOPMENT</Link></li>
+              <li><Link to="/services/artificial-intelligence" className="text-gray-400 hover:text-white transition-colors">AI SOLUTIONS</Link></li>
+              <li><Link to="/services/web/website-design-development" className="text-gray-400 hover:text-white transition-colors">WEB & SOFTWARE DEVELOPMENT</Link></li>
               <li><Link to="/services/software-development" className="text-gray-400 hover:text-white transition-colors">SOFTWARE DEVELOPMENT</Link></li>
-              <li><Link to="/services/digital-marketing/seo" className="text-gray-400 hover:text-white transition-colors">DIGITAL MARKETING</Link></li>
-              <li><Link to="/services/branding" className="text-gray-400 hover:text-white transition-colors">BRANDING</Link></li>
+              <li><Link to="/services/branding" className="text-gray-400 hover:text-white transition-colors">BRANDING & CREATIVE SERVICES</Link></li>
             </ul>
           </div>
 
@@ -96,7 +95,7 @@ function Footer() {
           <div>
             <h3 className="text-yellow-500 font-bold text-xl mb-6 uppercase">JOIN OUR NEWSLETTER</h3>
             <p className="text-gray-400 mb-4">
-              We will send you weekly updates for better product management.
+            Stay updated with insights, trends, and growth strategies delivered weekly.
             </p>
             
             <form onSubmit={handleSubscribe} className="space-y-3">

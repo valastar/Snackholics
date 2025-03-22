@@ -214,22 +214,6 @@ function ContactUs() {
               />
             </div>
 
-            {/* Fax Number */}
-            <div>
-              <label htmlFor="faxNumber" className="block text-sm uppercase tracking-wider text-white/80 mb-3">
-                FAX NUMBER
-              </label>
-              <input
-                type="text"
-                id="faxNumber"
-                name="faxNumber"
-                placeholder="FAXNUMBER"
-                value={formData.faxNumber}
-                onChange={handleChange}
-                className="w-full p-4 rounded-full bg-transparent border border-neutral-700 text-white placeholder-neutral-600 focus:outline-none focus:border-yellow-500"
-              />
-            </div>
-
             {/* Budget */}
             <div>
               <label htmlFor="budget" className="block text-sm uppercase tracking-wider text-white/80 mb-3">

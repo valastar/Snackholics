@@ -22,19 +22,19 @@ function OurTeams() {
       name: 'CODY LEGGE',
       title: 'CO-FOUNDER',
       image: '/images/our-team-1.jpeg',
-      description: "As a seasoned Marketing and Business Development Specialist, I specialize in guiding startups through their growth journey. With a proven track record of managing multiple clients simultaneously, I excel in creating bespoke marketing and business development strategies that cater to diverse budgetary needs. My expertise lies in comprehensive market research, digital marketing, sales strategies, and operational planning, all aimed at establishing a solid market presence and ensuring long-term success for our clients."
+      description: "Marketing & Business Development Specialist with expertise in guiding startups through their growth journey. Cody specializes in digital marketing, sales strategies, and operational planning."
     },
     {
       name: 'KERI',
       title: 'MARKETING EXPERT',
       image: '/images/our-team-2.jpeg',
-      description: "With a rich tapestry of experiences spanning social services, customer engagement, and marketing and business development, I bring a unique blend of empathy, strategic thinking, and client-focused innovation to my current role. My journey has been marked by a steadfast commitment to making a tangible difference in the lives of individuals and communities, a principle that drives my marketing strategies and business development initiatives."
+      description: "Bringing a unique blend of strategic thinking and client-focused innovation, Keri has extensive experience in customer engagement and business development."
     },
     {
-      name: 'ROBERT BROWN',
-      title: 'SOFTWARE ENGINEER',
+      name: 'JESSE PAUL',
+      title: 'SOFTWARE ENGINEER & INNOVATOR',
       image: '/images/our-team-4.jpeg', // You'll need to add this image
-      description: "Robert has extensive experience in developing scalable and efficient software systems."
+      description: "Jesse Paul is a software engineer with a passion for technical innovation, game design, and problem-solving. He has worked on statistical calculators for online casinos, node server design, and Windows/Linux server management, excelling in cutting-edge technologies and dynamic web solutions."
     }
   ];
 

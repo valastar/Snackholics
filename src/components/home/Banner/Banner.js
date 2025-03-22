@@ -171,33 +171,36 @@ const AnimatedHeroSection = () => {
           {/* Subtitle - with animation */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <span className="text-yellow-500 font-medium tracking-wider text-sm md:text-base uppercase">
-              WELCOME TO OUR PLATFORM
+            Welcome to QuickGrowth
             </span>
           </div>
 
           {/* Main Heading - with animation */}
           <div className="mt-4 md:mt-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
-              <span className="block animate-slide-up" style={{ animationDelay: '0.3s' }}>EXPERTLY NAVIGATING</span>
-              <span className="block animate-slide-up" style={{ animationDelay: '0.4s' }}>COMPLEX</span>
-              <span className="block animate-slide-up" style={{ animationDelay: '0.5s' }}>
-                SOFTWARE <span className="relative inline-block px-4">
-                  <span className="relative z-10 text-yellow-500 animate-pulse-slow">CHALLENGES</span>
+              <span className="block animate-slide-up" style={{ animationDelay: '0.4s' }}>EMPOWERING BUSINESSES</span>
+              <span className="block animate-slide-up" style={{ animationDelay: '0.5s' }}>WITH CUTTING-EDGE</span>
+              <span className="block animate-slide-up" style={{ animationDelay: '0.6s' }}>
+                MARKETING &  
+                <span className="relative inline-block px-4">
+                  <span className="relative z-10 text-yellow-500 animate-pulse-slow">TECHNOLOGY</span>
                   <span className="absolute -inset-1 border border-yellow-500 rounded-full opacity-70 z-0 animate-pulse-slow"></span>
                 </span>
+                SOLUTIONS
               </span>
-              <span className="block animate-slide-up" style={{ animationDelay: '0.6s' }}>WITH</span>
-              <span className="block animate-slide-up" style={{ animationDelay: '0.7s' }}>INNOVATIVE SOLUTIONS.</span>
             </h1>
           </div>
 
           {/* Description text - with animation */}
-          <div className="mt-6 md:mt-8 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
+          <div className="mt-6 md:mt-8 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
             <p className="text-gray-300 text-base md:text-lg">
-              Discover the tools, resources, and insights you need to turn your ideas into tangible results.
-              We're here to support your journey every step of the way.
+              We help businesses navigate the evolving digital landscape with strategic marketing, 
+              software solutions, and innovative technology. Whether you're a startup looking to establish 
+              your brand or an enterprise scaling new heights, we provide the tools, insights, and expertise 
+              to drive success.
             </p>
           </div>
+
 
           {/* CTA Buttons - with animation */}
           <div className="mt-10 md:mt-12 flex flex-wrap gap-4 md:gap-6">

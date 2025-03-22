@@ -72,6 +72,7 @@ function Services() {
       <div className="absolute inset-0 bg-gradient-to-br from-neutral-900 to-black opacity-90 pointer-events-none"></div>
       
       <div className="relative z-10 container mx-auto max-w-6xl">
+        
         {/* Section Header */}
         <div className="text-center mb-16">
           <div 
@@ -85,15 +86,22 @@ function Services() {
             data-aos-delay="100"
             className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-500"
           >
-            Services We Offer
+            Transform Challenges into Opportunities with Technology
           </h2>
+          <p 
+            data-aos="fade-up" 
+            data-aos-delay="200"
+            className="text-neutral-400 max-w-3xl mx-auto mt-4 text-lg"
+          >
+            We offer a comprehensive range of services designed to help businesses thrive in a competitive digital landscape.
+          </p>
         </div>
 
         {/* Services Grid */}
         <div 
           className="grid md:grid-cols-3 gap-8"
           data-aos="fade-up" 
-          data-aos-delay="200"
+          data-aos-delay="300"
         >
           {servicesData.map((service, index) => (
             <div 
@@ -112,9 +120,14 @@ function Services() {
                 {service.title}
               </h3>
               
-              {/* Description */}
+              {/* Updated Description */}
               <p className="text-neutral-400 text-sm">
-                Innovative solutions tailored to your business needs, driving digital transformation with cutting-edge expertise.
+                {index === 0 && "We equip businesses with advanced analytics, automation, and AI-powered tools to optimize marketing campaigns and maximize efficiency."}
+                {index === 1 && "Custom web and mobile app development, automation solutions, and enterprise software tailored to your business needs."}
+                {index === 2 && "We craft unique brand identities that set you apart from the competition, including logo design, brand strategy, and storytelling."}
+                {index === 3 && "SEO, PPC, social media management, and content marketing strategies designed to increase visibility, engagement, and conversions."}
+                {index === 4 && "Leverage AI-driven chatbots, data analytics, and machine learning solutions to enhance customer experience and business intelligence."}
+                {index === 5 && "We offer expert guidance to individuals and businesses navigating the complexities of immigration processes."}
               </p>
             </div>
           ))}

@@ -28,8 +28,11 @@ function AboutUs() {
         {/* Description text */}
         <div className="mt-6 md:mt-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
           <p className="text-gray-300 text-base md:text-lg">
-            We have quickly grown into a sophisticated organization, serving a diverse clientele ranging from dynamic startups to established enterprises. We expanded our expertise beyond blockchain to encompass a wide spectrum of cutting-edge technologies. Our portfolio of successful projects showcases our commitment to excellence and our ability to adapt, innovate, and deliver results.
+          At QuickGrowth, we are committed to delivering impactful marketing and technology solutions tailored to your business needs. From startups to established enterprises, we harness the power of AI, digital marketing, branding, and software development to turn your challenges into opportunities.
           </p>
+          <p2 className="text-gray-300 text-base md:text-lg">
+          With a dynamic team of experts, we go beyond conventional marketing strategies to deliver data-driven solutions that enhance customer engagement, drive conversions, and fuel business growth.
+          </p2>
         </div>
 
         {/* CTA Button */}

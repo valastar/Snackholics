@@ -31,8 +31,8 @@ function OurTeam() {
       }
     },
     {
-      name: "Anastasia Yatsun",
-      role: "Software engenieer",
+      name: "JESSE PAUL",
+      role: "Software Engineer & Innovator",
       image: "/images/our-team-3.jpeg",
       social: {
         // facebook: "#",
