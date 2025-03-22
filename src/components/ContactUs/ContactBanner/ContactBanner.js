@@ -251,13 +251,13 @@ function ContactBanner() {
                                 <img src="/images/contact/location.svg" alt="location" />
                                 <h3>Toronto, Canada</h3>
                                 <p className='subTitle'>Quick Growth Marketing</p>
-                                <p className='title'>9600 Southland Cir SW #2710, Calgary,  <br />
+                                <p className='title'>9600 Southland Cir SW #2710, Calgary <br />
                                 AB T2V 5A1</p>
                                 <div className="block">
                                     <p>Office Hours</p>
                                     <span>9:00am – 5:30pm (Mon to Fri)</span>
                                 </div>
-                                <a href="tel:+15879196296"> Phone: <span>+15879196296</span></a> <p> </p>
+                                <a href="tel:+15879196296">Phone: <span>+15879196296</span></a> <p> </p>
                                 <a href="mailto:billing@quickgrowth.ai">Email: <span>billing@quickgrowth.ai</span></a>
                             </div>
                         </div>
