@@ -11,22 +11,22 @@ function OurProcess(props) {
         {
             number: '01',
             title: 'UNDERSTAND',
-            description: 'Begin by diving deep into project requirements and client needs to establish a strong foundation.'
+            description: 'We begin by analyzing your goals, challenges, and market dynamics to craft a tailored strategy.'
         },
         {
             number: '02',
             title: 'ENGAGE',
-            description: 'Collaborate with clients to align on goals, expectations, and strategies.'
+            description: 'Our team collaborates closely with you to align strategies and expectations for maximum impact.'
         },
         {
             number: '03',
             title: 'INNOVATE',
-            description: 'Develop creative, groundbreaking solutions tailored to meet unique challenges.'
+            description: 'Creative and data-driven solutions are developed to address unique business needs.'
         },
         {
             number: '04',
             title: 'DELIVER',
-            description: 'Execute and ensure timely delivery of high-quality solutions that exceed expectations.'
+            description: 'We execute strategies with precision, ensuring on-time delivery and measurable results.'
         }
     ];
 
@@ -35,7 +35,7 @@ function OurProcess(props) {
             <div className="container">
                 <div className="title" data-aos="fade-up" data-aos-duration="1000">
                     <h2>{props.title || 'OUR PROCESS'}</h2>
-                    <p>{props.description || 'Our company is guided by a foundation of four core principles.'}</p>
+                    <p>{props.description || 'How We Work to Deliver Results'}</p>
                 </div>
                 <div className="process-grid" data-aos="fade-up" data-aos-duration="1000">
                     {processSteps.map((step, index) => (
