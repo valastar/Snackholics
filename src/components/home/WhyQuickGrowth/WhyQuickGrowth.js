@@ -3,13 +3,16 @@ import Header from '../../Header/Header'
 import Footer from '../../Footer/Footer'
 // import OurServices from './OurServices/OurServices'
 import WhyQuickGrowthSection from './WhyQuickGrowthSection'
+import WhyQuickGrowthpage from "./WhyQuickGrowthPage"
 
 function WhyQuickGrowth() {
   return (
     <div className="bg-black text-white min-h-screen">
       <Header/>
-      <WhyQuickGrowthSection />
+      {/* <WhyQuickGrowthSection /> */}
       <div className="container mx-auto px-4">
+
+     <WhyQuickGrowthpage />
 
       </div>
       {/* <OurServices /> */}

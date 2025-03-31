@@ -33,7 +33,7 @@ function OurTeams() {
     {
       name: 'JESSE PAUL',
       title: 'SOFTWARE ENGINEER & INNOVATOR',
-      image: '/images/our-team-4.jpeg', // You'll need to add this image
+      image: '/images/our-team-5.jpeg',
       description: "Jesse Paul is a software engineer with a passion for technical innovation, game design, and problem-solving. He has worked on statistical calculators for online casinos, node server design, and Windows/Linux server management, excelling in cutting-edge technologies and dynamic web solutions."
     }
   ];
