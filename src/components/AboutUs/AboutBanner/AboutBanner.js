@@ -25,11 +25,11 @@ function AboutBanner() {
                                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our <span className="text-yellow-500">Story</span></h2>
                                 <div className="space-y-4">
                                     <p className="text-gray-300">
-                                        Our team has a reputation for its mastery in tackling intricate and challenging software projects - we thrive on complexity and have a proven track record of successfully delivering solutions that others find daunting.
+                                    At QuickGrowth, we are more than just a marketing agency—we are dedicated partners in your business journey, committed to transforming ideas into reality. Our expertise spans digital marketing, branding, business development, and software solutions, ensuring that every client receives tailored strategies for sustainable growth.
                                     </p>
-                                    <p className="text-gray-300">
+                                    {/* <p className="text-gray-300">
                                         We have quickly grown into a sophisticated organization, serving a diverse clientele ranging from dynamic startups to established enterprises. We expanded our expertise beyond blockchain to encompass a wide spectrum of cutting edge technologies. Our portfolio of successful projects showcases our commitment to excellence and our ability to adapt, innovate, and deliver results.
-                                    </p>
+                                    </p> */}
                                 </div>
                             </div>
                         </div>
