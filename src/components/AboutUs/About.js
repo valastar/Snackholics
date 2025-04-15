@@ -14,15 +14,15 @@ function About() {
       <Header/>
       <AboutBanner />
       <div className="container mx-auto px-4">
-        <Achievements/>
-        <CoreValues />
+        {/* <Achievements/> */}
+        {/* <CoreValues /> */}
       </div>
-      <OurServices />
+      {/* <OurServices /> */}
       <div className="container mx-auto px-4">
-        <OurTeam />
+        {/* <OurTeam /> */}
         <Journey />
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

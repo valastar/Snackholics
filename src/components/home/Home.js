@@ -18,13 +18,13 @@ function Home() {
       <Banner />
       <AboutUs />
       <Services />
-      <OurSkills />
-      <OurProcess title="Our Process" description="Our company is guided by a foundation of four core principles" dataList={OurProcessList}/>
-      <WhyQuickGrowthSection />
-      <ClientSays />
-      <OurTeams />
-      <RequestQuote />
-      <Footer />
+      {/* <OurSkills /> */}
+      {/* <OurProcess title="Our Process" description="Our company is guided by a foundation of four core principles" dataList={OurProcessList}/> */}
+      {/* <WhyQuickGrowthSection />
+      <ClientSays /> */}
+      {/* <OurTeams /> */}
+      {/* <RequestQuote />
+      <Footer /> */}
     </React.Fragment>
   )
 }

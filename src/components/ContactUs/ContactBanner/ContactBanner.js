@@ -14,7 +14,7 @@ function ContactBanner() {
         let particles = [];
         let animationFrameId;
         
-        // Set canvas dimensions
+        // Set canvas dimensiosn
         const setCanvasDimensions = () => {
             canvas.width = window.innerWidth;
             canvas.height = Math.max(
@@ -157,8 +157,8 @@ function ContactBanner() {
                 <div className="container">
                     <div className="row">
                         <div className="title" data-aos="fade-up" data-aos-duration="1000">
-                            <h2>Contact us</h2>
-                            <p>We will help a client's problems to develop the product s they have with high quality Change the appearance.</p>
+                            <h2>Contactanos</h2>
+                            <p>Contactanos para pedir nuestros serivicios!</p>
                         </div>
                     </div>
                 </div>
@@ -248,20 +248,19 @@ function ContactBanner() {
                     <div className="row justify-content-center">
                         <div className="col-lg-5 col-md-6" data-aos="fade-up" data-aos-duration="1000">
                             <div className="info">
-                                <img src="/images/contact/location.svg" alt="location" />
-                                <h3>Toronto, Canada</h3>
-                                <p className='subTitle'>Quick Growth Marketing</p>
-                                <p className='title'>9600 Southland Cir SW #2710, Calgary <br />
-                                AB T2V 5A1</p>
+                                {/* <img src="/images/contact/location.svg" alt="location" /> */}
+                                <h3>Hermosillo Sonora</h3>
+                                <p className='title'>Calle 12 De Octubre & Sonora 100, <br />
+                                San Benito, Hermosillo,</p>
                                 <div className="block">
-                                    <p>Office Hours</p>
-                                    <span>9:00am – 5:30pm (Mon to Fri)</span>
+                                    <p>Abierto a las:</p>
+                                    <span>12:00pm – 7:00pm (Lunes a Sabado)</span>
                                 </div>
-                                <a href="tel:+15879196296">Phone: <span>+15879196296</span></a> <p> </p>
-                                <a href="mailto:billing@quickgrowth.ai">Email: <span>billing@quickgrowth.ai</span></a>
+                                <a href="tel:6622050077">Phone: <span>6622050077</span></a> <p> </p>
+                                <a href="mailto:servicioalcliente@snackholics.com ">Email: <span>servicioalcliente@snackholics.com </span></a>
                             </div>
                         </div>
-                        <div className="col-lg-5 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+                        {/* <div className="col-lg-5 col-md-6" data-aos="fade-up" data-aos-duration="1000">
                             <div className="info">
                                 <img src="/images/contact/emergency.svg" alt="emergency" />
                                 <h3>24 / 7 Emergency Support</h3>
@@ -274,8 +273,8 @@ function ContactBanner() {
                                     </span>
                                 </div>
                                 <Link to="/" className="btn-custom">Support</Link>
-                            </div>
-                        </div>
+                            </div> */}
+                        {/* </div> */}
                     </div>
                 </div>
             </div>

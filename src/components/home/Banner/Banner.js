@@ -171,22 +171,22 @@ const AnimatedHeroSection = () => {
           {/* Subtitle - with animation */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <span className="text-yellow-500 font-medium tracking-wider text-sm md:text-base uppercase">
-            Welcome to QuickGrowth
+            Bienvenidos a Snackholics 
             </span>
           </div>
 
           {/* Main Heading - with animation */}
           <div className="mt-4 md:mt-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight">
-              <span className="block animate-slide-up" style={{ animationDelay: '0.4s' }}>EMPOWERING BUSINESSES</span>
-              <span className="block animate-slide-up" style={{ animationDelay: '0.5s' }}>WITH CUTTING-EDGE</span>
+              <span className="block animate-slide-up" style={{ animationDelay: '0.4s' }}>Empoderando a los jóvenes con snacks creativos,</span>
+              <span className="block animate-slide-up" style={{ animationDelay: '0.5s' }}>experiencias únicas</span>
               <span className="block animate-slide-up" style={{ animationDelay: '0.6s' }}>
-                MARKETING &  
+              y buen ambiente
                 <span className="relative inline-block px-4">
-                  <span className="relative z-10 text-yellow-500 animate-pulse-slow">TECHNOLOGY</span>
-                  <span className="absolute -inset-1 border border-yellow-500 rounded-full opacity-70 z-0 animate-pulse-slow"></span>
+                  {/* <span className="relative z-10 text-yellow-500 animate-pulse-slow">TECHNOLOGY</span> */}
+                  {/* <span className="absolute -inset-1 border border-yellow-500 rounded-full opacity-70 z-0 animate-pulse-slow"></span> */}
                 </span>
-                SOLUTIONS
+                {/* SOLUTIONS */}
               </span>
             </h1>
           </div>
@@ -194,21 +194,22 @@ const AnimatedHeroSection = () => {
           {/* Description text - with animation */}
           <div className="mt-6 md:mt-8 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
             <p className="text-gray-300 text-base md:text-lg">
-              We help businesses navigate the evolving digital landscape with strategic marketing, 
-              software solutions, and innovative technology. Whether you're a startup looking to establish 
-              your brand or an enterprise scaling new heights, we provide the tools, insights, and expertise 
-              to drive success.
+            En Snackholics reinventamos la hora del snack. Creamos un espacio divertido, seguro y lleno de sabor donde los estudiantes pueden relajarse, socializar y disfrutar de opciones deliciosas a precios accesibles.
             </p>
           </div>
 
 
           {/* CTA Buttons - with animation */}
           <div className="mt-10 md:mt-12 flex flex-wrap gap-4 md:gap-6">
-            <button className="px-8 py-4 bg-yellow-500 hover:bg-yellow-600 text-black font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg animate-fade-in" style={{ animationDelay: '1.1s' }}>
-              GET STARTED
+          <button 
+              className="btn-contact bg-yellow-500 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition-all duration-300"
+              onClick={() => window.location.href = '/contact-us'}
+            >
+              CONTÁCTANOS
             </button>
+
             <button className="px-8 py-4 bg-transparent hover:bg-black/30 text-white border border-yellow-500/50 hover:border-yellow-500 font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style={{ animationDelay: '1.3s' }}>
-              EXPLORE MORE
+            A COMER EN EL PUF 
             </button>
           </div>
         </div>

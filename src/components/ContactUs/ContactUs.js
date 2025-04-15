@@ -9,8 +9,8 @@ function ContactUs() {
     <React.Fragment>
       <Header />
       <ContactBanner />
-      <RequestQuote />
-      <Footer />
+      {/* <RequestQuote /> */}
+      {/* <Footer /> */}
     </React.Fragment>
   )
 }

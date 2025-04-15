@@ -138,7 +138,7 @@ export default function MobileNav() {
       {/* Mobile header with logo and hamburger */}
       <div className="lg:hidden fixed top-0 left-0 right-0 bg-black z-50 px-4 py-3 flex justify-between items-center border-b border-gray-800 shadow-lg">
         <Link to="/" className="z-50">
-          <img src="/images/logo.svg" alt="Logo" className="h-10" />
+          <img src="/images/logo.jpeg" alt="Logo" className="h-10" />
         </Link>
         <button
           onClick={toggleMenu}

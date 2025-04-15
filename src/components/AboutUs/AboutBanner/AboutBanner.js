@@ -3,7 +3,7 @@ import React from 'react'
 function AboutBanner() {
     return (
         <>
-            {/* Hero Banner Section */}
+            {/* Hero Banner Section
             <div className="relative bg-cover bg-center bg-no-repeat h-[550px] flex items-center justify-center text-center" 
                  style={{ backgroundImage: "url('/images/aboutUs/about.svg')" }}>
                 <div className="container mx-auto px-4">
@@ -14,7 +14,7 @@ function AboutBanner() {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Our Story Section */}
             <div className="py-20 lg:py-28">
@@ -22,10 +22,10 @@ function AboutBanner() {
                     <div className="flex flex-col md:flex-row items-center">
                         <div className="md:w-7/12 mb-10 md:mb-0" data-aos="fade-right" data-aos-duration="1000">
                             <div>
-                                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Our <span className="text-yellow-500">Story</span></h2>
+                                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Informacion de <span className="text-yellow-500">Salas</span></h2>
                                 <div className="space-y-4">
                                     <p className="text-gray-300">
-                                    At QuickGrowth, we are more than just a marketing agency—we are dedicated partners in your business journey, committed to transforming ideas into reality. Our expertise spans digital marketing, branding, business development, and software solutions, ensuring that every client receives tailored strategies for sustainable growth.
+                                    Nuestras 2 salas que tienen equipo tecnologico con un buen precio de 120 la hora, es para que cualquier estudiante pueda hacer sus estudios en un lugar seguro y si necesita cualquier equipamiento lo garantizamos en nuestra papeleria y snacks
                                     </p>
                                     {/* <p className="text-gray-300">
                                         We have quickly grown into a sophisticated organization, serving a diverse clientele ranging from dynamic startups to established enterprises. We expanded our expertise beyond blockchain to encompass a wide spectrum of cutting edge technologies. Our portfolio of successful projects showcases our commitment to excellence and our ability to adapt, innovate, and deliver results.

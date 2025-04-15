@@ -45,21 +45,21 @@ export default function Navigation({ isSticky }) {
           <Link to="/">
             <img
               className={`h-14 transition-all duration-300 ${isSticky ? 'h-12' : 'h-14'}`}
-              src="/images/logo.svg"
+              src="/images/logo.jpeg"
               alt="logo"
             />
           </Link>
           
           <ul className="hidden lg:flex items-center space-x-8">
             <li>
-              <Link
+              { <Link
                 to="/about-us"
                 className="text-white hover:text-yellow-500 py-2 transition-colors duration-300"
               >
                 About Us
-              </Link>
-            </li>
-            
+              </Link> }
+            {/* </li> */}
+{/*             
             <li ref={menuRef} className="relative">
               <button
                 onClick={toggleServicesMenu}
@@ -75,13 +75,13 @@ export default function Navigation({ isSticky }) {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
+              </button> */}
               
               {/* Only render menu when open */}
               {servicesMenuOpen && <ServiceMegaMenu onClose={() => setServicesMenuOpen(false)} />}
             </li>
             
-            <li>
+            {/* <li>
               <Link
                 to="/portfolio"
                 className="text-white hover:text-yellow-500 py-2 transition-colors duration-300"
@@ -97,14 +97,14 @@ export default function Navigation({ isSticky }) {
               >
                 Why Quick Growth
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link
                 to="/contact-us"
                 className="text-white hover:text-yellow-500 py-2 transition-colors duration-300"
               >
-                Contact Us
+                Manda tu pedido
               </Link>
             </li>
           </ul>
@@ -116,7 +116,7 @@ export default function Navigation({ isSticky }) {
             to="/contact-us"
             className="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold rounded-full transition-all duration-300"
           >
-            Let's talk
+            Contactanos
           </Link>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const servicesData = [
   { 
-    title: 'Expert Tools', 
+    title: 'Venta de Snacks Variados', 
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
         <path fillRule="evenodd" d="M12 2.25a.75.75 0 01.75.75v.756a49.106 49.106 0 018.198 2.424.75.75 0 01-.182 1.463h-8.016v7.884a.75.75 0 01-1.5 0v-7.884H2.184a.75.75 0 01-.182-1.463 49.155 49.155 0 018.198-2.424V3a.75.75 0 01.75-.75zm0 15a.75.75 0 01.75.75v.006a.75.75 0 01-1.5 0v-.006a.75.75 0 01.75-.75zm-2.035-4.64a3 3 0 011.409-1.725 6.98 6.98 0 00-1.274-.247.75.75 0 01.659-1.32 8.464 8.464 0 012.378.406.75.75 0 01.525.701c0 .326-.15.621-.396.835a3 3 0 01-.64 3.646.75.75 0 01-1.058-1.062 1.5 1.5 0 00.325-1.843z" clipRule="evenodd" />
@@ -13,7 +13,7 @@ const servicesData = [
     )
   },
   { 
-    title: 'Software Development', 
+    title: 'Espacios de Estudio y Reunión', 
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
         <path fillRule="evenodd" d="M14.615 1.595a.75.75 0 01.88.522l1.456 5.823a.75.75 0 001.454-.361L16.98 3.902a.75.75 0 01.538-.929l3.57-.713a.75.75 0 01.529 1.406l-2.538 1.115a.75.75 0 00-.016 1.39l3.055 1.344a.75.75 0 01-.47 1.424L15.848 7.261a.75.75 0 01-.525-.714V5.517a.75.75 0 00-.852-.522l-5.831 1.466a.75.75 0 00-.525.714v3.893c0 .346-.223.666-.555.78l-2.852 1.009a.75.75 0 11-.461-1.425l2.593-.916V6.474a2.25 2.25 0 011.576-2.142l5.965-1.498a2.25 2.25 0 012.629 2.007l.791 3.363a2.25 2.25 0 01-1.477 2.577l-3.055 1.344a.75.75 0 00.47 1.424l3.884-1.165a.75.75 0 01.525.714V19.5a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-7.5a2.25 2.25 0 012.25-2.25h7.5a.75.75 0 00.75-.75v-.036a.75.75 0 00-.54-.695l-3.626-1.384a.75.75 0 11.461-1.425l4.171 1.602a2.25 2.25 0 011.51 2.135v.987a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-7.5a2.25 2.25 0 012.25-2.25h7.5z" clipRule="evenodd" />
@@ -21,7 +21,7 @@ const servicesData = [
     )
   },
   { 
-    title: 'Branding', 
+    title: 'Pedidos en Línea y en Local', 
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
         <path fillRule="evenodd" d="M7.5 6v.75H5.513c-.96 0-1.764.724-1.865 1.679l-1.263 12A1.875 1.875 0 004.25 22.5h15.5a1.875 1.875 0 001.865-2.071l-1.263-12a1.875 1.875 0 00-1.865-1.679H16.5V6a4.5 4.5 0 10-9 0zM12 3a3 3 0 00-3 3v.75h6V6a3 3 0 00-3-3zm-3 8.25a3 3 0 106 0v-.75a.75.75 0 011.5 0v.75a4.5 4.5 0 11-9 0v-.75a.75.75 0 011.5 0v.75z" clipRule="evenodd" />
@@ -29,7 +29,7 @@ const servicesData = [
     )
   },
   { 
-    title: 'Digital Marketing', 
+    title: 'Acceso a Material Escolar', 
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
         <path d="M10.5 18.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" />
@@ -38,7 +38,7 @@ const servicesData = [
     )
   },
   { 
-    title: 'Artificial Intelligence', 
+    title: 'Eventos Temáticos y Promociones', 
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
         <path d="M16.5 7.5h-9v9h9v-9z" />
@@ -79,21 +79,21 @@ function Services() {
             data-aos="fade-up"
             className="inline-block text-yellow-500 text-sm uppercase tracking-wider mb-4"
           >
-            SERVICES
+            SERVICIOS
           </div>
           <h2 
             data-aos="fade-up" 
             data-aos-delay="100"
             className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-500"
           >
-            Transform Challenges into Opportunities with Technology
+            Ofrecemos espacios comodos y seguros con tecnologia y snacks
           </h2>
           <p 
             data-aos="fade-up" 
             data-aos-delay="200"
             className="text-neutral-400 max-w-3xl mx-auto mt-4 text-lg"
           >
-            We offer a comprehensive range of services designed to help businesses thrive in a competitive digital landscape.
+            Danos un espacio a los estudiantes para hacer sus necesidades escolares y snacks para que puedan estar agusto
           </p>
         </div>
 
@@ -122,12 +122,12 @@ function Services() {
               
               {/* Updated Description */}
               <p className="text-neutral-400 text-sm">
-                {index === 0 && "We equip businesses with advanced analytics, automation, and AI-powered tools to optimize marketing campaigns and maximize efficiency."}
-                {index === 1 && "Custom web and mobile app development, automation solutions, and enterprise software tailored to your business needs."}
-                {index === 2 && "We craft unique brand identities that set you apart from the competition, including logo design, brand strategy, and storytelling."}
-                {index === 3 && "SEO, PPC, social media management, and content marketing strategies designed to increase visibility, engagement, and conversions."}
-                {index === 4 && "Leverage AI-driven chatbots, data analytics, and machine learning solutions to enhance customer experience and business intelligence."}
-                {index === 5 && "We offer expert guidance to individuals and businesses navigating the complexities of immigration processes."}
+                {index === 0 && "Gran selección de snacks dulces y salados, con opciones frescas, económicas y de calidad."}
+                {index === 1 && "Zonas cómodas y tranquilas ideales para tareas, proyectos y reuniones sociales entre estudiantes."}
+                {index === 2 && "Puedes consumir en el local o pedir desde una app/plataforma digital."}
+                {index === 3 && "Disponibilidad de papelería y pizarrones inteligentes para uso de los clientes."}
+                {index === 4 && "Viernes con temáticas especiales, concursos, y promociones como combos o limonadas gratis con credencial estudiantil."}
+                {index === 5 && "Recolectas mensuales de ropa, comida, croquetas y donaciones para personas necesitadas y animales sin hogar."}
               </p>
             </div>
           ))}
@@ -135,14 +135,14 @@ function Services() {
 
         {/* Explore More Button */}
         <div className="text-center mt-16">
-          <Link 
+          {/* <Link 
             to="/services"
             className="inline-block px-10 py-4 bg-yellow-500 text-black font-semibold rounded-full hover:bg-yellow-600 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl"
             data-aos="fade-up"
             data-aos-delay="700"
           >
             Explore More Services
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>
