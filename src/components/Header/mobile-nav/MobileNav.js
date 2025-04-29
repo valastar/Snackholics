@@ -70,67 +70,67 @@ export default function MobileNav() {
   };
 
   const menuCategories = [
-    {
-      title: "Web Solutions",
-      icon: "/images/services/menu1.svg",
-      items: [
-        { name: "Website Design & Development", path: "/services/web/website-design-development" },
-        { name: "Ecommerce Development", path: "/services/web/ecommerce-development" },
-        { name: "Website Maintenance", path: "/services/web/website-maintenance" },
-        { name: "Copy Writing", path: "/services/web/copywriting" },
-      ],
-    },
-    {
-      title: "Software Solutions",
-      icon: "/images/services/menu2.svg",
-      items: [
-        { name: "Web Applications", path: "/services/software/web-applications" },
-        { name: "Mobile Applications", path: "/services/software/mobile-applications" },
-        { name: "API & System Integration", path: "/services/software/api-integration" },
-        { name: "SaaS Solutions", path: "/services/software/saas-solutions" },
-        { name: "MVP Solutions", path: "/services/software/mvp-solutions" },
-        { name: "Maintenance Supply", path: "/services/software/maintenance-supply" },
-      ],
-    },
-    {
-      title: "AI Solutions",
-      icon: "/images/services/menu3.svg",
-      items: [
-        { name: "AI Chatbots", path: "/services/artificial-intelligence/ai-chatbots" },
-        { name: "SaaS AI", path: "/services/artificial-intelligence/saas-ai" },
-        { name: "AI PoC & MVP", path: "/services/artificial-intelligence/ai-poc-ai-mvp" },
-      ],
-    },
-    {
-      title: "Digital Marketing",
-      icon: "/images/services/menu4.svg",
-      items: [
-        { name: "Search Engine Optimization", path: "/services/digital-marketing/seo" },
-        { name: "Social Media Marketing", path: "/services/digital-marketing/smm" },
-        { name: "Google Ads or PPC Marketing", path: "/services/digital-marketing/ppc" },
-        { name: "Online Reputation Management", path: "/services/digital-marketing/reputation" },
-      ],
-    },
-    {
-      title: "Branding",
-      icon: "/images/services/menu5.svg",
-      items: [
-        { name: "Brand Identity", path: "/services/branding/identity" },
-        { name: "Logo Design", path: "/services/branding/logo-design" },
-        { name: "Printing Materials", path: "/services/branding/printing" },
-        { name: "Brand Launch", path: "/services/branding/launch" },
-      ],
-    },
-    {
-      title: "Hosting Services",
-      icon: "/images/services/menu6.svg",
-      items: [
-        { name: "Domain Registration", path: "/services/hosting/domain-registration" },
-        { name: "Website Hosting", path: "/services/hosting/website" },
-        { name: "Email Hosting", path: "/services/hosting/email" },
-        { name: "Security & SSL", path: "/services/hosting/security" },
-      ],
-    },
+    // {
+    //   title: "Web Solutions",
+    //   icon: "/images/services/menu1.svg",
+    //   items: [
+    //     { name: "Website Design & Development", path: "/services/web/website-design-development" },
+    //     { name: "Ecommerce Development", path: "/services/web/ecommerce-development" },
+    //     { name: "Website Maintenance", path: "/services/web/website-maintenance" },
+    //     { name: "Copy Writing", path: "/services/web/copywriting" },
+    //   ],
+    // },
+    // {
+    //   title: "Software Solutions",
+    //   icon: "/images/services/menu2.svg",
+    //   items: [
+    //     { name: "Web Applications", path: "/services/software/web-applications" },
+    //     { name: "Mobile Applications", path: "/services/software/mobile-applications" },
+    //     { name: "API & System Integration", path: "/services/software/api-integration" },
+    //     { name: "SaaS Solutions", path: "/services/software/saas-solutions" },
+    //     { name: "MVP Solutions", path: "/services/software/mvp-solutions" },
+    //     { name: "Maintenance Supply", path: "/services/software/maintenance-supply" },
+    //   ],
+    // },
+    // {
+    //   title: "AI Solutions",
+    //   icon: "/images/services/menu3.svg",
+    //   items: [
+    //     { name: "AI Chatbots", path: "/services/artificial-intelligence/ai-chatbots" },
+    //     { name: "SaaS AI", path: "/services/artificial-intelligence/saas-ai" },
+    //     { name: "AI PoC & MVP", path: "/services/artificial-intelligence/ai-poc-ai-mvp" },
+    //   ],
+    // },
+    // {
+    //   title: "Digital Marketing",
+    //   icon: "/images/services/menu4.svg",
+    //   items: [
+    //     { name: "Search Engine Optimization", path: "/services/digital-marketing/seo" },
+    //     { name: "Social Media Marketing", path: "/services/digital-marketing/smm" },
+    //     { name: "Google Ads or PPC Marketing", path: "/services/digital-marketing/ppc" },
+    //     { name: "Online Reputation Management", path: "/services/digital-marketing/reputation" },
+    //   ],
+    // },
+    // {
+    //   title: "Branding",
+    //   icon: "/images/services/menu5.svg",
+    //   items: [
+    //     { name: "Brand Identity", path: "/services/branding/identity" },
+    //     { name: "Logo Design", path: "/services/branding/logo-design" },
+    //     { name: "Printing Materials", path: "/services/branding/printing" },
+    //     { name: "Brand Launch", path: "/services/branding/launch" },
+    //   ],
+    // },
+    // {
+    //   title: "Hosting Services",
+    //   icon: "/images/services/menu6.svg",
+    //   items: [
+    //     { name: "Domain Registration", path: "/services/hosting/domain-registration" },
+    //     { name: "Website Hosting", path: "/services/hosting/website" },
+    //     { name: "Email Hosting", path: "/services/hosting/email" },
+    //     { name: "Security & SSL", path: "/services/hosting/security" },
+    //   ],
+    // },
   ];
 
   return (
@@ -189,129 +189,48 @@ export default function MobileNav() {
           {/* Main navigation links */}
           <nav className="px-4 py-2">
             <ul className="space-y-1">
-              <li>
+            {/* <li className="py-1">
+              <Link
+                to="/about"
+                className="block px-4 py-3 text-white text-lg font-medium hover:bg-gray-800 rounded-lg transition-colors"
+                onClick={handleLinkClick}
+              >
+                About Us
+              </Link>
+            </li> */}
+
+
+            <li>
                 <Link
                   to="/about-us"
                   className="flex items-center py-3 px-4 text-white text-lg font-medium rounded-lg hover:bg-gray-800 transition-colors"
                   onClick={handleLinkClick}
                 >
-                  About Us
+                  Servicios
                 </Link>
               </li>
 
               {/* Services navigation with accordion */}
-              <li className="py-1">
-                <div className="rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleCategory('services')}
-                    className="flex items-center justify-between w-full py-3 px-4 text-white text-lg font-medium hover:bg-gray-800 rounded-lg transition-colors"
-                    aria-expanded={activeCategory === 'services' || (Array.isArray(activeCategory) && activeCategory.includes('services'))}
-                  >
-                    <span>Services</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className={`h-5 w-5 transition-transform duration-200 ${
-                        activeCategory === 'services' ? "rotate-180" : "rotate-0"
-                      }`}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </button>
-
-                  {/* Services categories */}
-                  <div 
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      activeCategory === 'services' || (Array.isArray(activeCategory) && activeCategory.includes('services')) 
-                        ? 'max-h-screen opacity-100' 
-                        : 'max-h-0 opacity-0'
-                    }`}
-                  >
-                    <div className="px-2 py-3 bg-gray-900/50 rounded-lg mt-1">
-                      {/* Service category accordions */}
-                      {menuCategories.map((category, index) => (
-                        <div key={index} className="mb-2 last:mb-0 overflow-hidden rounded-lg">
-                          <button
-                            onClick={() => toggleCategory(index)}
-                            className="flex items-center justify-between w-full p-3 text-left text-white rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors"
-                          >
-                            <div className="flex items-center">
-                              <img src={category.icon} alt="" className="w-5 h-5 mr-3" />
-                              <span className="font-medium">{category.title}</span>
-                            </div>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              className={`h-4 w-4 transition-transform duration-200 ${
-                                (activeCategory === index || (Array.isArray(activeCategory) && activeCategory.includes(index))) 
-                                  ? "rotate-180 text-yellow-500" 
-                                  : "rotate-0 text-gray-400"
-                              }`}
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M19 9l-7 7-7-7"
-                              />
-                            </svg>
-                          </button>
-
-                          <div 
-                            className={`overflow-hidden transition-all duration-200 ease-in-out ${
-                              (activeCategory === index || (Array.isArray(activeCategory) && activeCategory.includes(index))) 
-                                ? 'max-h-screen opacity-100' 
-                                : 'max-h-0 opacity-0'
-                            }`}
-                          >
-                            <ul className="p-3 bg-gray-900/30 rounded-b-lg space-y-1">
-                              {category.items.map((item, idx) => (
-                                <li key={idx}>
-                                  <Link
-                                    to={item.path}
-                                    className="block px-3 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/30 rounded transition-colors text-sm"
-                                    onClick={handleLinkClick}
-                                  >
-                                    {item.name}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </li>
+             
 
               <li>
-                <Link
+                {/* <Link
                   to="/portfolio"
                   className="flex items-center py-3 px-4 text-white text-lg font-medium rounded-lg hover:bg-gray-800 transition-colors"
                   onClick={handleLinkClick}
                 >
                   Portfolio
-                </Link>
+                </Link> */}
               </li>
 
               <li>
-                <Link
+                {/* <Link
                   to="/why-quick-growth"
                   className="flex items-center py-3 px-4 text-white text-lg font-medium rounded-lg hover:bg-gray-800 transition-colors"
                   onClick={handleLinkClick}
                 >
                   Why Quick Growth
-                </Link>
+                </Link> */}
               </li>
 
               <li>
@@ -320,7 +239,7 @@ export default function MobileNav() {
                   className="flex items-center py-3 px-4 text-white text-lg font-medium rounded-lg hover:bg-gray-800 transition-colors"
                   onClick={handleLinkClick}
                 >
-                  Contact Us
+                  Manda tu pedido
                 </Link>
               </li>
             </ul>
@@ -337,10 +256,10 @@ export default function MobileNav() {
                 </div>
                 <div>
                   <Link
-                    to="tel:+15879196296"
+                    to="tel:6622050077"
                     className="text-gray-300 hover:text-yellow-500 transition-colors"
                   >
-                    +1 587 919 6296
+                    6622050077
                   </Link>
                 </div>
               </div>
@@ -367,7 +286,7 @@ export default function MobileNav() {
                 className="block text-center w-full px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-semibold rounded-lg hover:from-yellow-600 hover:to-yellow-700 transform hover:scale-[1.02] transition-all shadow-lg"
                 onClick={handleLinkClick}
               >
-                Let's talk
+                Contactanos
               </Link>
             </div>
           </div>
