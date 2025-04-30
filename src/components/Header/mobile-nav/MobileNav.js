@@ -189,15 +189,15 @@ export default function MobileNav() {
           {/* Main navigation links */}
           <nav className="px-4 py-2">
             <ul className="space-y-1">
-            {/* <li className="py-1">
+            <li className="py-1">
               <Link
                 to="/about"
                 className="block px-4 py-3 text-white text-lg font-medium hover:bg-gray-800 rounded-lg transition-colors"
                 onClick={handleLinkClick}
               >
-                About Us
+                Servicios
               </Link>
-            </li> */}
+            </li>
 
 
             <li>
