@@ -270,10 +270,10 @@ export default function MobileNav() {
                 </div>
                 <div>
                   <Link
-                    to="mailto:Outreach@quickgrowth.ai"
+                    to="mailto:servicioalcliente@snackholics.com"
                     className="text-gray-300 hover:text-yellow-500 transition-colors"
                   >
-                    Outreach@quickgrowth.ai
+                    servicioalcliente@snackholics.com
                   </Link>
                 </div>
               </div>

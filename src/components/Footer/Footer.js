@@ -73,7 +73,7 @@ function Footer() {
           <div>
             <h3 className="text-yellow-500 font-bold text-xl mb-6 uppercase">COMPANY</h3>
             <ul className="space-y-3">
-              <li><Link to="/about-us" className="text-gray-400 hover:text-white transition-colors">ABOUT US</Link></li>
+              <li><Link to="/about-us" className="text-gray-400 hover:text-white transition-colors">SERVICIOS</Link></li>
               <li><Link to="/contact-us" className="text-gray-400 hover:text-white transition-colors">LOCATION</Link></li>
               <li><Link to="/faqs" className="text-gray-400 hover:text-white transition-colors">FAQS</Link></li>
               <li><Link to="/contact-us" className="text-gray-400 hover:text-white transition-colors">CONTACT</Link></li>
