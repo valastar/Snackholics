@@ -20,6 +20,13 @@ const AnimatedHeroSection = () => {
     setCanvasDimensions();
     window.addEventListener('resize', setCanvasDimensions);
     
+    // Colors for the theme
+    const colors = {
+      yellow: '#FFD700',      // Bright yellow
+      lightBlue: '#87CEEB',   // Light sky blue
+      accentBlue: '#1E90FF',  // Slightly darker blue for contrast
+    };
+    
     // Particle class
     class Particle {
       constructor() {
@@ -28,7 +35,8 @@ const AnimatedHeroSection = () => {
         this.size = Math.random() * 2 + 0.5;
         this.speedX = (Math.random() - 0.5) * 0.5;
         this.speedY = (Math.random() - 0.5) * 0.5;
-        this.color = '#FFD700';
+        // Randomly assign yellow or light blue color to particles
+        this.color = Math.random() > 0.5 ? colors.yellow : colors.lightBlue;
         this.alpha = Math.random() * 0.6 + 0.2;
       }
       
@@ -64,7 +72,7 @@ const AnimatedHeroSection = () => {
     
     // Draw curved lines
     const drawCurves = (time) => {
-      // First curve
+      // First curve - yellow
       ctx.beginPath();
       ctx.moveTo(canvas.width * 0.1, canvas.height * 0.5);
       ctx.bezierCurveTo(
@@ -72,11 +80,11 @@ const AnimatedHeroSection = () => {
         canvas.width * 0.7, canvas.height * (0.6 + Math.cos(time * 0.001) * 0.1),
         canvas.width * 0.9, canvas.height * 0.3
       );
-      ctx.strokeStyle = 'rgba(255, 215, 0, 0.3)';
+      ctx.strokeStyle = 'rgba(255, 215, 0, 0.3)'; // Yellow with transparency
       ctx.lineWidth = 2;
       ctx.stroke();
       
-      // Second curve
+      // Second curve - light blue
       ctx.beginPath();
       ctx.moveTo(canvas.width * 0.2, canvas.height * 0.7);
       ctx.bezierCurveTo(
@@ -84,14 +92,47 @@ const AnimatedHeroSection = () => {
         canvas.width * 0.6, canvas.height * (0.8 + Math.sin(time * 0.0015) * 0.1),
         canvas.width * 0.8, canvas.height * 0.4
       );
-      ctx.strokeStyle = 'rgba(255, 215, 0, 0.2)';
+      ctx.strokeStyle = 'rgba(135, 206, 235, 0.3)'; // Light blue with transparency
       ctx.lineWidth = 1.5;
       ctx.stroke();
+      
+      // Third curve - darker blue
+      ctx.beginPath();
+      ctx.moveTo(canvas.width * 0.05, canvas.height * 0.3);
+      ctx.bezierCurveTo(
+        canvas.width * 0.25, canvas.height * (0.5 + Math.sin(time * 0.002) * 0.1),
+        canvas.width * 0.55, canvas.height * (0.4 + Math.cos(time * 0.002) * 0.1),
+        canvas.width * 0.95, canvas.height * 0.6
+      );
+      ctx.strokeStyle = 'rgba(30, 144, 255, 0.2)'; // Darker blue with transparency
+      ctx.lineWidth = 1;
+      ctx.stroke();
+    };
+    
+    // Draw background gradient
+    const drawBackground = () => {
+      const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+      gradient.addColorStop(0, '#1a3a5f'); // Dark blue shade
+      gradient.addColorStop(1, '#0f172a'); // Very dark blue/navy
+      
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // Add subtle pattern
+      for (let i = 0; i < canvas.width; i += 20) {
+        for (let j = 0; j < canvas.height; j += 20) {
+          if (Math.random() > 0.992) {
+            ctx.fillStyle = Math.random() > 0.5 ? 'rgba(255, 215, 0, 0.03)' : 'rgba(135, 206, 235, 0.03)';
+            ctx.fillRect(i, j, 4, 4);
+          }
+        }
+      }
     };
     
     // Animation loop
     const animate = (time) => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      // Draw background gradient instead of clearing
+      drawBackground();
       
       // Draw background curves
       drawCurves(time);
@@ -104,8 +145,6 @@ const AnimatedHeroSection = () => {
       
       // Connect nearby particles with lines
       ctx.globalAlpha = 0.1;
-      ctx.strokeStyle = '#FFD700';
-      ctx.lineWidth = 0.5;
       
       for (let a = 0; a < particles.length; a++) {
         for (let b = a; b < particles.length; b++) {
@@ -114,6 +153,17 @@ const AnimatedHeroSection = () => {
           const distance = Math.sqrt(dx * dx + dy * dy);
           
           if (distance < 100) {
+            // Use the color of the connected particles
+            if (particles[a].color === colors.yellow && particles[b].color === colors.yellow) {
+              ctx.strokeStyle = colors.yellow;
+            } else if (particles[a].color === colors.lightBlue && particles[b].color === colors.lightBlue) {
+              ctx.strokeStyle = colors.lightBlue;
+            } else {
+              // Mix colors for connections between different colored particles
+              ctx.strokeStyle = colors.accentBlue;
+            }
+            
+            ctx.lineWidth = 0.5;
             ctx.beginPath();
             ctx.moveTo(particles[a].x, particles[a].y);
             ctx.lineTo(particles[b].x, particles[b].y);
@@ -140,7 +190,7 @@ const AnimatedHeroSection = () => {
 
   return (
     <div 
-      className="relative overflow-hidden bg-[#0B0B0B] pt-32 md:pt-40 lg:pt-52"
+      className="relative overflow-hidden pt-32 md:pt-40 lg:pt-52"
       style={{ 
         minHeight: '90vh'
       }}
@@ -149,20 +199,20 @@ const AnimatedHeroSection = () => {
       <canvas 
         ref={canvasRef} 
         className="absolute top-0 left-0 w-full h-full z-0"
-        style={{ opacity: 0.8 }}
+        style={{ opacity: 0.85 }}
       />
       
       {/* Animated circles */}
       <div className="absolute w-64 h-64 top-1/4 right-1/4 opacity-20 animate-float-slow">
-        <div className="absolute w-full h-full border-4 border-yellow-500 rounded-full blur-md"></div>
+        <div className="absolute w-full h-full border-4 border-yellow-400 rounded-full blur-md"></div>
       </div>
       
       <div className="absolute w-40 h-40 bottom-1/3 left-1/5 opacity-15 animate-float-medium">
-        <div className="absolute w-full h-full border-4 border-yellow-500 rounded-full blur-sm"></div>
+        <div className="absolute w-full h-full border-4 border-blue-300 rounded-full blur-sm"></div>
       </div>
       
       <div className="absolute w-20 h-20 top-1/3 left-1/3 opacity-10 animate-float-fast">
-        <div className="absolute w-full h-full border-4 border-yellow-500 rounded-full blur-sm"></div>
+        <div className="absolute w-full h-full border-4 border-yellow-300 rounded-full blur-sm"></div>
       </div>
       
       {/* Content */}
@@ -170,7 +220,7 @@ const AnimatedHeroSection = () => {
         <div className="flex flex-col items-start max-w-5xl">
           {/* Subtitle - with animation */}
           <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <span className="text-yellow-500 font-medium tracking-wider text-sm md:text-base uppercase">
+            <span className="text-yellow-400 font-medium tracking-wider text-sm md:text-base uppercase">
             Bienvenidos a Snackholics 
             </span>
           </div>
@@ -183,17 +233,14 @@ const AnimatedHeroSection = () => {
               <span className="block animate-slide-up" style={{ animationDelay: '0.6s' }}>
               y buen ambiente
                 <span className="relative inline-block px-4">
-                  {/* <span className="relative z-10 text-yellow-500 animate-pulse-slow">TECHNOLOGY</span> */}
-                  {/* <span className="absolute -inset-1 border border-yellow-500 rounded-full opacity-70 z-0 animate-pulse-slow"></span> */}
                 </span>
-                {/* SOLUTIONS */}
               </span>
             </h1>
           </div>
 
           {/* Description text - with animation */}
           <div className="mt-6 md:mt-8 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-            <p className="text-gray-300 text-base md:text-lg">
+            <p className="text-blue-100 text-base md:text-lg">
             En Snackholics reinventamos la hora del snack. Creamos un espacio divertido, seguro y lleno de sabor donde los estudiantes pueden relajarse, socializar y disfrutar de opciones deliciosas a precios accesibles.
             </p>
           </div>
@@ -201,21 +248,23 @@ const AnimatedHeroSection = () => {
 
           {/* CTA Buttons - with animation */}
           <div className="mt-10 md:mt-12 flex flex-wrap gap-4 md:gap-6">
-          <button 
-              className="btn-contact bg-yellow-500 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition-all duration-300"
+            <button 
+              className="bg-yellow-400 text-black font-bold py-3 px-6 rounded-full hover:bg-yellow-300 transition-all duration-300 transform hover:-translate-y-1 animate-fade-in"
+              style={{ animationDelay: '1.1s' }}
               onClick={() => window.location.href = '/contact-us'}
             >
               CONTÁCTANOS
             </button>
 
-            <button className="px-8 py-4 bg-transparent hover:bg-black/30 text-white border border-yellow-500/50 hover:border-yellow-500 font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" style={{ animationDelay: '1.3s' }}>
-            A COMER EN EL PUF 
+            <button 
+              className="px-8 py-4 bg-transparent hover:bg-blue-400/30 text-white border border-blue-300/50 hover:border-blue-300 font-bold rounded-full transition-all duration-300 transform hover:-translate-y-1 animate-fade-in" 
+              style={{ animationDelay: '1.3s' }}
+            >
+              A COMER EN EL PUF 
             </button>
           </div>
         </div>
       </div>
-      
-
       
       <style jsx>{`
         @keyframes float-slow {

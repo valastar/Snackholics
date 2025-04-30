@@ -48,7 +48,7 @@ const servicesData = [
     )
   },
   { 
-    title: 'Immigration Consulting', 
+    title: 'Proyectos Sociales', 
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
         <path fillRule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clipRule="evenodd" />
@@ -67,33 +67,68 @@ function Services() {
   }, []);
 
   return (
-    <section className="relative bg-black text-white py-20 px-4 md:px-12 lg:px-20">
-      {/* Background Gradient Blur */}
-      <div className="absolute inset-0 bg-gradient-to-br from-neutral-900 to-black opacity-90 pointer-events-none"></div>
+    <section className="relative py-24 px-4 md:px-12 lg:px-20 text-white overflow-hidden">
+{/* Base background gradient */}
+<div className="absolute inset-0 z-0" style={{
+        background: "linear-gradient(to bottom right, #0f172a, #1a3a5f)",
+      }}></div>
+      
+      {/* Light blue glowing accents */}
+      <div className="absolute top-0 right-0 w-full h-full z-0 opacity-60">
+        <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full" 
+          style={{
+            background: "radial-gradient(circle, hsla(203, 92.00%, 75.50%, 0.30) 0%, rgba(135,206,250,0.1) 40%, rgba(135,206,250,0) 70%)",
+            filter: "blur(40px)"
+          }}>
+        </div>
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full" 
+          style={{
+            background: "radial-gradient(circle, rgba(173,216,230,0.25) 0%, rgba(173,216,230,0.05) 50%, rgba(173,216,230,0) 70%)",
+            filter: "blur(35px)"
+          }}>
+        </div>
+      </div>
+      
+      {/* Yellow accent particles */}
+      <div className="absolute inset-0 z-0">
+        {[...Array(8)].map((_, i) => (
+          <div 
+            key={i}
+            className="absolute rounded-full bg-yellow-400"
+            style={{
+              width: Math.floor(Math.random() * 6) + 2 + 'px',
+              height: Math.floor(Math.random() * 6) + 2 + 'px',
+              top: Math.floor(Math.random() * 100) + '%',
+              left: Math.floor(Math.random() * 100) + '%',
+              opacity: Math.random() * 0.15 + 0.05,
+              filter: "blur(1px)"
+            }}
+          />
+        ))}
+      </div>
       
       <div className="relative z-10 container mx-auto max-w-6xl">
-        
         {/* Section Header */}
         <div className="text-center mb-16">
           <div 
             data-aos="fade-up"
-            className="inline-block text-yellow-500 text-sm uppercase tracking-wider mb-4"
+            className="inline-block text-yellow-400 text-sm uppercase tracking-wider mb-4"
           >
             SERVICIOS
           </div>
           <h2 
             data-aos="fade-up" 
             data-aos-delay="100"
-            className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-neutral-200 to-neutral-500"
+            className="text-4xl md:text-5xl font-bold text-white"
           >
-            Ofrecemos espacios comodos y seguros con tecnologia y snacks
+            Ofrecemos espacios cómodos y seguros con tecnología y snacks
           </h2>
           <p 
             data-aos="fade-up" 
             data-aos-delay="200"
-            className="text-neutral-400 max-w-3xl mx-auto mt-4 text-lg"
+            className="text-blue-100 max-w-3xl mx-auto mt-4 text-lg"
           >
-            Danos un espacio a los estudiantes para hacer sus necesidades escolares y snacks para que puedan estar agusto
+            Damos un espacio a los estudiantes para cubrir sus necesidades escolares y disfrutar de snacks para que puedan estar a gusto
           </p>
         </div>
 
@@ -106,22 +141,22 @@ function Services() {
           {servicesData.map((service, index) => (
             <div 
               key={index}
-              className="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 space-y-4 group hover:bg-neutral-800 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
+              className="bg-blue-900/20 backdrop-blur-sm border border-blue-400/10 rounded-2xl p-6 space-y-4 group hover:bg-blue-800/30 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/5"
               data-aos="fade-up"
               data-aos-delay={`${index * 100}`}
             >
               {/* Icon Container */}
-              <div className="w-16 h-16 bg-yellow-500 rounded-xl flex items-center justify-center text-black">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-xl flex items-center justify-center text-black shadow-lg shadow-yellow-400/20">
                 {service.icon}
               </div>
               
               {/* Service Title */}
-              <h3 className="text-xl font-semibold text-white group-hover:text-yellow-500 transition-colors">
+              <h3 className="text-xl font-semibold text-white group-hover:text-yellow-400 transition-colors">
                 {service.title}
               </h3>
               
               {/* Updated Description */}
-              <p className="text-neutral-400 text-sm">
+              <p className="text-blue-100 text-sm">
                 {index === 0 && "Gran selección de snacks dulces y salados, con opciones frescas, económicas y de calidad."}
                 {index === 1 && "Zonas cómodas y tranquilas ideales para tareas, proyectos y reuniones sociales entre estudiantes."}
                 {index === 2 && "Puedes consumir en el local o pedir desde una app/plataforma digital."}
@@ -133,17 +168,8 @@ function Services() {
           ))}
         </div>
 
-        {/* Explore More Button */}
-        <div className="text-center mt-16">
-          {/* <Link 
-            to="/services"
-            className="inline-block px-10 py-4 bg-yellow-500 text-black font-semibold rounded-full hover:bg-yellow-600 transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl"
-            data-aos="fade-up"
-            data-aos-delay="700"
-          >
-            Explore More Services
-          </Link> */}
-        </div>
+        {/* Decorative elements */}
+        <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-blue-300/20 to-transparent"></div>
       </div>
     </section>
   );

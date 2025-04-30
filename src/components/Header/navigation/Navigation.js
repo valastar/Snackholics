@@ -56,7 +56,7 @@ export default function Navigation({ isSticky }) {
                 to="/about-us"
                 className="text-white hover:text-yellow-500 py-2 transition-colors duration-300"
               >
-                About Us
+                Servicios
               </Link> }
             {/* </li> */}
 {/*             

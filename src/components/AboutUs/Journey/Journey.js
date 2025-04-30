@@ -8,6 +8,7 @@ function Journey() {
   }, [])
 
   return (
+    
     <section className="py-20">
       <div className="relative rounded-3xl overflow-hidden shadow-xl" data-aos="fade-right" data-aos-duration="1000">
         {/* Background Image */}

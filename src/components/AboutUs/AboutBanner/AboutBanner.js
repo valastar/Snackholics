@@ -3,18 +3,18 @@ import React from 'react'
 function AboutBanner() {
     return (
         <>
-            {/* Hero Banner Section
+            {/* { Hero Banner Section } */}
             <div className="relative bg-cover bg-center bg-no-repeat h-[550px] flex items-center justify-center text-center" 
                  style={{ backgroundImage: "url('/images/aboutUs/about.svg')" }}>
                 <div className="container mx-auto px-4">
                     <div className="max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
-                        <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">About Us</h2>
+                        <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Servicios</h2>
                         <p className="text-lg md:text-xl text-gray-300">
                             We will help a client's problems to develop the products they have with high quality and change the appearance.
                         </p>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
             {/* Our Story Section */}
             <div className="py-20 lg:py-28">
