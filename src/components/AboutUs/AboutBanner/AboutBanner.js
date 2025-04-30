@@ -10,7 +10,7 @@ function AboutBanner() {
                     <div className="max-w-2xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
                         <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Servicios</h2>
                         <p className="text-lg md:text-xl text-gray-300">
-                            We will help a client's problems to develop the products they have with high quality and change the appearance.
+                            Estos son los servicios que garantizamos para nuestros clientes
                         </p>
                     </div>
                 </div>
